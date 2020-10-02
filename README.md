@@ -3,7 +3,7 @@
 [![License Apache2](https://img.shields.io/hexpm/l/plug.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Discord](https://img.shields.io/discord/685554030159593522)](https://discord.com/widget?id=685554030159593522&theme=dark)
 
-Welcome to the **Apache Cassandra™ certification workshop**! In this two-hour workshop, we'll give you all of the details and resources needed to prepare yourself for both the Apache Cassandra™ Administrator Associate and Apache Cassandra™ Developer Associate certification exams. Plus, we'll work through some practice questions and discuss some of the main exam topics you'll encounter on your path towards certification.
+Welcome to the **Apache Cassandra™ certification workshop**! In this two-hour workshop, we'll give you all of the details and resources needed to prepare yourself for both the Apache Cassandra™ **Administrator** Associate and Apache Cassandra™ **Developer** Associate certification exams. Plus, we'll work through some practice questions and discuss some of the main exam topics you'll encounter on your path towards certification.
 
 It doesn't matter if you join our workshop live or you prefer to do at your own pace, we have you covered. If you would like to attend one of our live sessions please register [HERE](https://www.eventbrite.co.uk/e/certification-exam-preparation-workshop-tickets-123447365393). In this repository, you'll find everything you need for this workshop:
 
