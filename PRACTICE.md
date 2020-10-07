@@ -12,6 +12,8 @@ This section will run you through a set of practice exam questions. We will spli
 | **1. CQL - upserts** | [CQL - upserts](#1-cql---upserts) |
 | **2. CQL - partition keys** | [CQL - partition keys](#2-cql---partition-keys) |
 | **3. CQL - clustering keys** | [CQL - clustering keys](#3-cql---clustering-keys) |
+| **4. CQL - batches** | [CQL - batches](#4-cql---batches) |
+
 
 ## 1. CQL - upserts
 #### Consider the CQL statements:
@@ -130,5 +132,42 @@ SELECT * from cars
   and model = 'Mustang' 
   and color = 'Red';
 ```
+
+[🏠 Back to Table of Contents](#table-of-contents)
+
+## 4. CQL - batches
+#### Consider the CQL statements:
+```
+CREATE TABLE employees (
+  id TEXT,
+  name TEXT,
+  department TEXT,
+  PRIMARY KEY ((id))
+);
+
+CREATE TABLE employees_by_department (
+  id TEXT,
+  name TEXT,
+  department TEXT,
+  PRIMARY KEY ((department), id)
+);
+
+BEGIN BATCH
+  INSERT INTO employees (id, name, department) 
+    VALUES ('AC1123', 'Joe', 'legal');
+
+  INSERT INTO employees_by_department (id, name, department)
+    VALUES ('AC1123', 'Joe', 'legal');
+APPLY BATCH;
+```
+#### What is a valid statement about this atomic batch?
+
+**A.** It is a single-partition batch that can be applied.
+
+**B.** It is a single-partition batch that cannot be applied.
+
+**C.** It is a multi-partition batch that can be applied.
+
+**D.** It is a multi-partition batch that cannot be applied.
 
 [🏠 Back to Table of Contents](#table-of-contents)
