@@ -49,8 +49,7 @@ INSERT INTO roller_coasters (name, park, rating)
 
 **D.** 4
 
-
-[🏠 Back to Table of Contents](#table-of-contents)
+[⬆️ Top](#sample-questions)
 
 ## 2. CQL - Developer and Administrator Exams
 #### Consider the CQL statements:
@@ -86,8 +85,7 @@ INSERT INTO songs (artist, title, length_seconds)
 **D.** A table with 4 partitions.
 
 
-[🏠 Back to Table of Contents](#table-of-contents)
-
+[⬆️ Top](#sample-questions)
 
 ## 3. CQL - Developer and Administrator Exams
 #### Consider the CQL statement:
@@ -133,7 +131,7 @@ SELECT * FROM cars
   AND color = 'Red';
 ```
 
-[🏠 Back to Table of Contents](#table-of-contents)
+[⬆️ Top](#sample-questions)
 
 ## 4. CQL - Developer and Administrator Exams
 #### Consider the CQL statements:
@@ -170,8 +168,7 @@ APPLY BATCH;
 
 **D.** It is a multi-partition batch that cannot be applied.
 
-[🏠 Back to Table of Contents](#table-of-contents)
-
+[⬆️ Top](#sample-questions)
 
 ## 5. CQL - Developer and Administrator Exams
 ####  Consider the table definition with a primary key ommitted:
@@ -205,7 +202,7 @@ What primary key does this table have?
 **D.** 
 ```PRIMARY KEY(name, city, reviewer)```
 
-[🏠 Back to Table of Contents](#table-of-contents)
+[⬆️ Top](#sample-questions)
 
 ## 6. CQL - Developer and Administrator Exams
 ####  Consider the table definition and ``SELECT`` statement:
@@ -219,7 +216,7 @@ CREATE TABLE teams (
 
 SELECT * FROM teams_by_wins WHERE wins = 4;
 ```
-Which materialized view definition can be used to this ``SELECT``?
+Which materialized view definition can be used to support this ``SELECT``?
 
 **A.** 
 ```
@@ -253,4 +250,4 @@ CREATE MATERIALIZED VIEW IF NOT EXISTS
       PRIMARY KEY((name), wins);
 ```
 
-[🏠 Back to Table of Contents](#table-of-contents)
+[🏠 Sample Questions List](#sample-questions-list)
