@@ -51,7 +51,9 @@ INSERT INTO roller_coasters (name, park, rating)
 
 [🏠 Back to Table of Contents](#table-of-contents)
 
-## 2. CQL Delevoper and Administrator Exams
+## 2. CQL 
+##    (Delevoper and Administrator Exams)
+
 #### Consider the CQL statements:
 ```
 CREATE TABLE songs (
