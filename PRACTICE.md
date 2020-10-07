@@ -9,13 +9,13 @@ This section will run you through a set of practice exam questions. We will spli
 
 | Question/Topic | Exam(s)
 |---|---|
-| **[1. CQL](#1-cql)** | Developer & Adminisrator |
+| **[1. CQL](#1-cql---developer-and-administrator-exams)** | Developer & Adminisrator |
 | **[2. CQL](#2-cql---developer-and-administrator-exams)** | Developer & Adminisrator |
-| **[3. CQL](#3-cql)** | Developer & Adminisrator |
-| **[4. CQL](#4-cql)** | Developer & Adminisrator |
+| **[3. CQL](#3-cql---developer-and-administrator-exams)** | Developer & Adminisrator |
+| **[4. CQL](#4-cql---developer-and-administrator-exams)** | Developer & Adminisrator |
 
 
-## 1. CQL
+## 1. CQL - Developer and Administrator Exams
 #### Consider the CQL statements:
 ```
 CREATE TABLE roller_coasters (
@@ -52,7 +52,6 @@ INSERT INTO roller_coasters (name, park, rating)
 [🏠 Back to Table of Contents](#table-of-contents)
 
 ## 2. CQL - Developer and Administrator Exams
-
 #### Consider the CQL statements:
 ```
 CREATE TABLE songs (
@@ -89,7 +88,7 @@ INSERT INTO songs (artist, title, length_seconds)
 [🏠 Back to Table of Contents](#table-of-contents)
 
 
-## 3. CQL
+## 3. CQL - Developer and Administrator Exams
 #### Consider the CQL statement:
 ```
 CREATE TABLE cars (
@@ -135,7 +134,7 @@ SELECT * FROM cars
 
 [🏠 Back to Table of Contents](#table-of-contents)
 
-## 4. CQL
+## 4. CQL - Developer and Administrator Exams
 #### Consider the CQL statements:
 ```
 CREATE TABLE employees (
