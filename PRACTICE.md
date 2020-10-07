@@ -250,4 +250,4 @@ CREATE MATERIALIZED VIEW IF NOT EXISTS
       PRIMARY KEY((name), wins);
 ```
 
-[🏠 Sample Questions List](#sample-questions-list)
+[⬆️ Top](#sample-questions)
