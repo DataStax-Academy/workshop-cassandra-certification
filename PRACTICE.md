@@ -10,7 +10,7 @@ This section will run you through a set of practice exam questions. We will spli
 | Question/Topic | Exam(s)
 |---|---|
 | **[1. CQL](#1-cql)** | Developer & Adminisrator |
-| **[2. CQL](#q2)** | Developer & Adminisrator |
+| **[2. CQL](#2-cql)** | Developer & Adminisrator |
 | **[3. CQL](#3-cql)** | Developer & Adminisrator |
 | **[4. CQL](#4-cql)** | Developer & Adminisrator |
 
@@ -51,8 +51,6 @@ INSERT INTO roller_coasters (name, park, rating)
 
 [🏠 Back to Table of Contents](#table-of-contents)
 
-
-<a name=q2>
 ## 2. CQL Delevoper and Administrator Exams
 #### Consider the CQL statements:
 ```
