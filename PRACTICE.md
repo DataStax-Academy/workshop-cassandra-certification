@@ -5,14 +5,14 @@
 
 This section will run you through a set of practice exam questions. We will split them into a set from DS201 (Developer), DS220 (Data Modeling), and DS210 (Administrator). 
 
-## Table of Contents
+## Sample Questions
 
-| Title  | Description
+| Question/Topic | Exam
 |---|---|
-| **1. CQL** | [CQL](#1-cql) |
-| **2. CQL - partition keys** | [CQL - partition keys](#2-cql---partition-keys) |
-| **3. CQL - clustering keys** | [CQL - clustering keys](#3-cql---clustering-keys) |
-| **4. CQL - batches** | [CQL - batches](#4-cql---batches) |
+| **[1. CQL](#1-cql)** | Developer & Adminisrator |
+| **[2. CQL](#2-cql)** | Developer & Adminisrator |
+| **[3. CQL](#3-cql)** | Developer & Adminisrator |
+| **[4. CQL](#4-cql)** | Developer & Adminisrator |
 
 
 ## 1. CQL
@@ -52,7 +52,7 @@ INSERT INTO roller_coasters (name, park, rating)
 [🏠 Back to Table of Contents](#table-of-contents)
 
 
-## 2. CQL - partition keys
+## 2. CQL
 #### Consider the CQL statements:
 ```
 CREATE TABLE songs (
@@ -89,7 +89,7 @@ INSERT INTO songs (artist, title, length_seconds)
 [🏠 Back to Table of Contents](#table-of-contents)
 
 
-## 3. CQL - clustering keys
+## 3. CQL
 #### Consider the CQL statement:
 ```
 CREATE TABLE cars (
@@ -135,7 +135,7 @@ SELECT * FROM cars
 
 [🏠 Back to Table of Contents](#table-of-contents)
 
-## 4. CQL - batches
+## 4. CQL
 #### Consider the CQL statements:
 ```
 CREATE TABLE employees (
