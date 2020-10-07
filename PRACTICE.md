@@ -14,7 +14,7 @@ This section will run you through a set of practice exam questions. We will spli
 | **[3. CQL](#3-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 | **[4. CQL](#4-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 | **[5. CQL](#5-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
-| **[6. CQL](#5-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
+| **[6. CQL](#6-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 
 ## 1. CQL - Developer and Administrator Exams
 #### Consider the CQL statements:
