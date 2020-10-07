@@ -9,13 +9,13 @@ This section will run you through a set of practice exam questions. We will spli
 
 | Title  | Description
 |---|---|
-| **1. CQL - upserts** | [CQL - upserts](#1-cql---upserts) |
+| **1. CQL** | [CQL](#1-cql) |
 | **2. CQL - partition keys** | [CQL - partition keys](#2-cql---partition-keys) |
 | **3. CQL - clustering keys** | [CQL - clustering keys](#3-cql---clustering-keys) |
 | **4. CQL - batches** | [CQL - batches](#4-cql---batches) |
 
 
-## 1. CQL - upserts
+## 1. CQL
 #### Consider the CQL statements:
 ```
 CREATE TABLE roller_coasters (
@@ -106,31 +106,31 @@ CREATE TABLE cars (
 
 **A.** 
 ```
-SELECT * from cars 
-  where make='Ford';
+SELECT * FROM cars 
+  WHERE make='Ford';
 ```
 
 **B.** 
 ```
-SELECT * from cars 
-  where make='Ford' 
-  and model = 'Mustang';
+SELECT * FROM cars 
+  WHERE make='Ford' 
+  AND model = 'Mustang';
 ```
 
 **C.** 
 ```
-SELECT * from cars 
-  where make='Ford' 
-  and model = 'Mustang' 
-  and year = 1969;
+SELECT * FROM cars 
+  WHERE make='Ford' 
+  AND model = 'Mustang' 
+  AND year = 1969;
 ```
 
 **D.** 
 ```
-SELECT * from cars 
-  where make='Ford' 
-  and model = 'Mustang' 
-  and color = 'Red';
+SELECT * FROM cars 
+  WHERE make='Ford' 
+  AND model = 'Mustang' 
+  AND color = 'Red';
 ```
 
 [🏠 Back to Table of Contents](#table-of-contents)
