@@ -9,11 +9,11 @@ This section will run you through a set of practice exam questions. We will spli
 
 | Question/Topic | Exam(s)
 |---|---|
-| **[1. CQL](#1-cql---developer-and-administrator-exams)** | Developer & Adminisrator |
-| **[2. CQL](#2-cql---developer-and-administrator-exams)** | Developer & Adminisrator |
-| **[3. CQL](#3-cql---developer-and-administrator-exams)** | Developer & Adminisrator |
-| **[4. CQL](#4-cql---developer-and-administrator-exams)** | Developer & Adminisrator |
-
+| **[1. CQL](#1-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
+| **[2. CQL](#2-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
+| **[3. CQL](#3-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
+| **[4. CQL](#4-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
+| **[5. CQL](#5-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 
 ## 1. CQL - Developer and Administrator Exams
 #### Consider the CQL statements:
@@ -170,3 +170,39 @@ APPLY BATCH;
 **D.** It is a multi-partition batch that cannot be applied.
 
 [🏠 Back to Table of Contents](#table-of-contents)
+
+
+## 5. CQL - Developer and Administrator Exams
+####  Consider the table definition with a primary key ommitted:
+```
+CREATE TABLE restaurant_reviews {
+  name TEXT,
+  city TEXT,
+  reviewer TEXT,
+  rating INT,
+  comments TEXT,
+  review_date TIMEUUID,
+  PRIMARY KEY (...)
+}
+```
+It is known that:
+- Restaurant_Reviews are uniquely identified by a combination of ``name``, ``city`` and ``reviewer``
+- Restaurant Reviews are retrieved from the table using combination of ``name``, ``city``
+- The table has multi-row partitions
+
+What primary key does this table have?
+
+**A.** 
+```PRIMARY KEY((name), city, reviewer)```
+
+**B.** 
+```PRIMARY KEY((name, city), reviewer)```
+
+**C.** 
+```PRIMARY KEY((name, reviewer), city)```
+
+**D.** 
+```PRIMARY KEY(name, city, reviewer)```
+
+[🏠 Back to Table of Contents](#table-of-contents)
+
