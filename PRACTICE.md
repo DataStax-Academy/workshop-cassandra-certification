@@ -15,7 +15,7 @@ This section will run you through a set of practice exam questions. We will spli
 
 ## 1. CQL - upserts
 #### Consider the CQL statements:
-```SQL
+```
 CREATE TABLE roller_coasters (
     name TEXT,
     park TEXT,
@@ -52,7 +52,7 @@ INSERT INTO roller_coasters (name, park, rating)
 
 ## 2. CQL - partition keys
 #### Consider the CQL statements:
-```SQL
+```
 CREATE TABLE songs (
     artist TEXT,
     title TEXT,
@@ -89,7 +89,7 @@ INSERT INTO songs (artist, title, length_seconds)
 
 ## 3. CQL - clustering keys
 #### Consider the CQL statement:
-```SQL
+```
 CREATE TABLE cars (
     make TEXT,
     model TEXT,
