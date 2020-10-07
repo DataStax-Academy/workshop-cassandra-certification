@@ -14,6 +14,7 @@ This section will run you through a set of practice exam questions. We will spli
 | **[3. CQL](#3-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 | **[4. CQL](#4-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 | **[5. CQL](#5-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
+| **[6. CQL](#5-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 
 ## 1. CQL - Developer and Administrator Exams
 #### Consider the CQL statements:
@@ -138,25 +139,25 @@ SELECT * FROM cars
 #### Consider the CQL statements:
 ```
 CREATE TABLE employees (
-  id TEXT,
-  name TEXT,
-  department TEXT,
-  PRIMARY KEY ((id))
+    id TEXT,
+    name TEXT,
+    department TEXT,
+    PRIMARY KEY ((id))
 );
 
 CREATE TABLE employees_by_department (
-  id TEXT,
-  name TEXT,
-  department TEXT,
-  PRIMARY KEY ((department), id)
+    id TEXT,
+    name TEXT,
+    department TEXT,
+    PRIMARY KEY ((department), id)
 );
 
 BEGIN BATCH
-  INSERT INTO employees (id, name, department) 
-    VALUES ('AC1123', 'Joe', 'legal');
+    INSERT INTO employees (id, name, department) 
+      VALUES ('AC1123', 'Joe', 'legal');
 
-  INSERT INTO employees_by_department (id, name, department)
-    VALUES ('AC1123', 'Joe', 'legal');
+    INSERT INTO employees_by_department (id, name, department)
+      VALUES ('AC1123', 'Joe', 'legal');
 APPLY BATCH;
 ```
 #### What is a valid statement about this atomic batch?
@@ -176,17 +177,17 @@ APPLY BATCH;
 ####  Consider the table definition with a primary key ommitted:
 ```
 CREATE TABLE restaurant_reviews {
-  name TEXT,
-  city TEXT,
-  reviewer TEXT,
-  rating INT,
-  comments TEXT,
-  review_date TIMEUUID,
-  PRIMARY KEY (...)
+    name TEXT,
+    city TEXT,
+    reviewer TEXT,
+    rating INT,
+    comments TEXT,
+    review_date TIMEUUID,
+    PRIMARY KEY (...)
 }
 ```
 It is known that:
-- Restaurant_Reviews are uniquely identified by a combination of ``name``, ``city`` and ``reviewer``
+- Restaurant Reviews are uniquely identified by a combination of ``name``, ``city`` and ``reviewer``
 - Restaurant Reviews are retrieved from the table using combination of ``name``, ``city``
 - The table has multi-row partitions
 
@@ -206,3 +207,50 @@ What primary key does this table have?
 
 [🏠 Back to Table of Contents](#table-of-contents)
 
+## 6. CQL - Developer and Administrator Exams
+####  Consider the table definition and ``SELECT`` statement:
+```
+CREATE TABLE teams (
+    name TEXT,
+    wins INT,
+    losses INT,
+    ties INT,
+);
+
+SELECT * FROM teams_by_wins WHERE wins = 4;
+```
+Which materialized view definition can be used to this ``SELECT``?
+
+**A.** 
+```
+CREATE MATERIALIZED VIEW IF NOT EXISTS
+    teams_by_wins AS
+    SELECT * from teams
+      PRIMARY KEY((wins), name);
+```
+**B.**
+```
+CREATE MATERIALIZED VIEW IF NOT EXISTS
+    teams_by_wins AS
+    SELECT * from teams
+      PRIMARY KEY((name), wins);
+```
+**C.**
+
+```
+CREATE MATERIALIZED VIEW IF NOT EXISTS
+    teams_by_wins AS
+    SELECT * from teams
+      WHERE name IS NOT NULL AND wins IS NOT NULL
+      PRIMARY KEY((wins), name);
+```
+**D.**
+```
+CREATE MATERIALIZED VIEW IF NOT EXISTS
+    teams_by_wins AS
+    SELECT * from teams
+      WHERE name IS NOT NULL AND name IS NOT NULL
+      PRIMARY KEY((name), wins);
+```
+
+[🏠 Back to Table of Contents](#table-of-contents)
