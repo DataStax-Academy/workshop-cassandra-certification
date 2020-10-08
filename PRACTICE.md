@@ -17,6 +17,7 @@ This section will run you through a set of practice exam questions. We will spli
 | **[6. CQL](#6-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 | **[7. CQL](#7-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 | **[8. CQL](#8-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
+| **[9. CQL](#9-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 
 ### 1. CQL - Developer and Administrator Exams
 Consider the CQL statements:
@@ -375,6 +376,51 @@ Which statement describes the ``WHERE`` clause in a query?
 | The correct answer is A |
 |:---|
 | Only the fields of the partition key are required. This insures the *partition-per-query* pattern. |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
+
+### 1. CQL - Developer and Administrator Exams
+Consider the CQL statements:
+```
+CREATE TYPE name (
+    first TEXT,
+    last TEXT
+);
+
+CREATE TABLE people (
+    id UUID,
+    name NAME,
+    email TEXT,
+    PRIMARY KEY(id, email)
+);
+```
+Which ``INSERT`` statement can be used to insert a row in the ``people`` table?
+**A.**
+```
+INSERT INTO people (id, name, email) 
+  VALUES (UUID(), {first:'foo', last:'bar'}, 'foo@datastax.com' );
+```
+**B.**
+```
+INSERT INTO people (id, name, email) 
+  VALUES (UUID(), name: {'foo', 'bar'}, 'foo@datastax.com' );
+```
+**C.**
+```
+INSERT INTO people (id, name, email) 
+  VALUES (UUID(), 'foo', 'bar', 'foo@datastax.com' );
+```
+**D.**
+```
+INSERT INTO people (id, name, email) 
+  VALUES (UUID(), ('foo', 'bar), 'foo@datastax.com' );
+```
+
+| The correct answer is A |
+|:---|
+| The fields of the userdefined type are passed using JSON. |
 </p>
 </details>
 
