@@ -18,6 +18,7 @@ This section will run you through a set of practice exam questions. We will spli
 | **[7. CQL](#7-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 | **[8. CQL](#8-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 | **[9. CQL](#9-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
+| **[10. CQL](#10-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 
 ### 1. CQL - Developer and Administrator Exams
 Consider the CQL statements:
@@ -420,7 +421,68 @@ INSERT INTO people (id, name, email)
 
 | The correct answer is A |
 |:---|
-| The fields of the userdefined type are passed using JSON. |
+| The fields of the user defined type are passed using JSON. |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
+
+### 10. CQL - Developer and Administrator Exams
+Consider the CQL statements:
+```
+CREATE TABLE people (
+    name TEXT,
+    email TEXT,
+    description TEXT,
+    nickname TEXT STATIC,
+    PRIMARY KEY((name), email)
+);
+
+INSERT INTO people (name, email, description, nickname) 
+  VALUES ('David', 'david@datastax.com', 'work', 'Dave');
+  
+INSERT INTO people (name, email, description, nickname) 
+  VALUES ('David', 'david@gmail.com', 'personal', 'Dave');
+  
+UPDATE people SET nickname = 'Davey', description = 'school' 
+  WHERE name = 'David' AND email = 'david@gmail.com';
+  
+SELECT * FROM PEOPLE WHERE name = 'David';  
+```
+What is the result of executing theses CQL statements?
+
+**A.**
+```
+ name  | email              | nickname | description
+-------+--------------------+----------+-------------
+ David | david@datastax.com |     Dave |        work
+ David |    david@gmail.com |    Davey |      school
+```
+**B.**
+```
+ name  | email              | nickname | description
+-------+--------------------+----------+-------------
+ David | david@datastax.com |    Davey |        work
+ David |    david@gmail.com |    Davey |      school
+```
+
+**C.**
+```
+ name  | email              | nickname | description
+-------+--------------------+----------+-------------
+ David |    david@gmail.com |    Davey |      school
+```
+
+**D.**
+```
+ name  | email              | nickname | description
+-------+--------------------+----------+-------------
+ David | david@datastax.com |     Dave |        work
+```
+
+| The correct answer is B |
+|:---|
+| The ``nickname`` field is static so both rows were set to *Davey*. Because ``email`` is a clustering column the table has two partitions. |
 </p>
 </details>
 
