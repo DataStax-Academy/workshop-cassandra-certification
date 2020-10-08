@@ -267,14 +267,14 @@ Which materialized view definition can be used to support this ``SELECT``?
 CREATE MATERIALIZED VIEW IF NOT EXISTS
     teams_by_wins AS
     SELECT * FROM teams
-      PRIMARY KEY((wins), name);
+      PRIMARY KEY((name), wins);
 ```
 **B.**
 ```
 CREATE MATERIALIZED VIEW IF NOT EXISTS
     teams_by_wins AS
     SELECT * FROM teams
-      PRIMARY KEY((name), wins);
+      PRIMARY KEY((wins), name);
 ```
 **C.**
 
@@ -283,7 +283,7 @@ CREATE MATERIALIZED VIEW IF NOT EXISTS
     teams_by_wins AS
     SELECT * FROM teams
       WHERE name IS NOT NULL AND wins IS NOT NULL
-      PRIMARY KEY((wins), name);
+      PRIMARY KEY((name), wins);
 ```
 **D.**
 ```
@@ -291,7 +291,7 @@ CREATE MATERIALIZED VIEW IF NOT EXISTS
     teams_by_wins AS
     SELECT * FROM teams
       WHERE name IS NOT NULL AND name IS NOT NULL
-      PRIMARY KEY((name), wins);
+      PRIMARY KEY((wins), name);
 ```
 
 <details><summary>Click to view the correct answer</summary>
