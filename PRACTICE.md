@@ -381,7 +381,7 @@ Which statement describes the ``WHERE`` clause in a query?
 
 [⬆️ Top](#sample-questions)
 
-### 1. CQL - Developer and Administrator Exams
+### 9. CQL - Developer and Administrator Exams
 Consider the CQL statements:
 ```
 CREATE TYPE name (
