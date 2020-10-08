@@ -299,7 +299,7 @@ CREATE MATERIALIZED VIEW IF NOT EXISTS
 
 | The correct answer is D |
 |:---|
-| Since primary key fields cannot be NULL the WHERE clause must include a *NULL check*. Since the ``WHERE`` clause in the ``SELECT`` is based on ``wins``, ``wins`` must be the partition key. |
+| Since primary key fields cannot be NULL the ``WHERE`` clause must include a *NULL check*. Since the ``WHERE`` clause in the ``SELECT`` is based on ``wins``, ``wins`` must be the partition key. |
 </p>
 </details>
 
