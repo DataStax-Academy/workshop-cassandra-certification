@@ -53,7 +53,8 @@ How many rows will the ``roller_coasters`` table have after executing all the CQ
 <p>
 
 | The correct answer is C |
-|---|
+| :--- |
+| The first and fourth ``INSERTS`` use the same primary key so they cause an *upsert*. Therefore only 3 rows are created. |
 </p>
 </details>
 
@@ -96,7 +97,8 @@ What is the result of executing all the CQL statements?
 <p>
 
 | The correct answer is D |
-|---|
+| :--- |
+| The primary key consists of ``artist`` *and* ``title``. Each ``INSERT`` has a unique ``artist``/``title`` pair so there are no *upserts* and each ``INSERT`` results in a unique partition. |
 </p>
 </details>
 
@@ -127,7 +129,7 @@ SELECT * FROM cars
 ```
 SELECT * FROM cars 
   WHERE year = 1969 
-  AND coolor = 'Red';
+  AND color = 'Red';
 ```
 
 **C.** 
@@ -150,7 +152,8 @@ SELECT * FROM cars
 <p>
 
 | The correct answer is C |
-|---|
+| :--- |
+| The primary key consists of ``make`` *and* ``model`` so **A** and **B** are excluded because the ``WHERE`` clause does not include the primary key. **C** and **D** both include the primary key but clustering columns can only be *constrained* L-R in the order they appear in the primary key. Since ``year`` appears before ``color``, **C** is correct and **D** is excluded. |
 </p>
 </details>
 
@@ -195,7 +198,8 @@ What is a valid statement about this atomic batch?
 <p>
 
 | The correct answer is C |
-|---|
+| :--- |
+| The two ``INSERTS`` are into different tables which makes them different partitions. Even if one or both result in *upserts* there is nothing preventing this batch from being applied. Inserting the same data into *de-normalized* tables is a common use case for CQL Batches. |
 </p>
 </details>
 
@@ -237,7 +241,8 @@ What primary key does this table have?
 <p>
 
 | The correct answer is B |
-|---|
+| :--- |
+| Since Restaurant Reviews are uniquely identified by a combination of ``name``, ``city`` and ``reviewer`` the primary key must include all three fields. Since Restaurant Reviews are retrieved from the table using combination of ``name``, ``city``, these two fields must comprise the *partition key*. Since this table has multi-row partitionsand ``reviewer`` is part of the primary key, it must be a clustering column.|
 </p>
 </details>
 
@@ -261,14 +266,14 @@ Which materialized view definition can be used to support this ``SELECT``?
 ```
 CREATE MATERIALIZED VIEW IF NOT EXISTS
     teams_by_wins AS
-    SELECT * from teams
+    SELECT * FROM teams
       PRIMARY KEY((wins), name);
 ```
 **B.**
 ```
 CREATE MATERIALIZED VIEW IF NOT EXISTS
     teams_by_wins AS
-    SELECT * from teams
+    SELECT * FROM teams
       PRIMARY KEY((name), wins);
 ```
 **C.**
@@ -276,7 +281,7 @@ CREATE MATERIALIZED VIEW IF NOT EXISTS
 ```
 CREATE MATERIALIZED VIEW IF NOT EXISTS
     teams_by_wins AS
-    SELECT * from teams
+    SELECT * FROM teams
       WHERE name IS NOT NULL AND wins IS NOT NULL
       PRIMARY KEY((wins), name);
 ```
@@ -284,7 +289,7 @@ CREATE MATERIALIZED VIEW IF NOT EXISTS
 ```
 CREATE MATERIALIZED VIEW IF NOT EXISTS
     teams_by_wins AS
-    SELECT * from teams
+    SELECT * FROM teams
       WHERE name IS NOT NULL AND name IS NOT NULL
       PRIMARY KEY((name), wins);
 ```
@@ -293,7 +298,8 @@ CREATE MATERIALIZED VIEW IF NOT EXISTS
 <p>
 
 | The correct answer is D |
-|---|
+|:---|
+| Since primary key fields cannot be NULL the WHERE clause must include a *NULL check*. Since the ``WHERE`` clause in the ``SELECT`` is based on ``wins``, ``wins`` must be the partition key. |
 </p>
 </details>
 
