@@ -49,6 +49,14 @@ INSERT INTO roller_coasters (name, park, rating)
 
 **D.** 4
 
+<details><summary>Click to view the correct answer</summary>
+<p>
+
+| The correct answer is C |
+|---|
+</p>
+</details>
+
 [⬆️ Top](#sample-questions)
 
 ## 2. CQL - Developer and Administrator Exams
