@@ -39,7 +39,7 @@ INSERT INTO roller_coasters (name, park, rating)
   VALUES ('Millenium Force', 'Cedar Point', 7 );
 ```
 
-#### How many rows will the roller_coasters table have after executing all the CQL statements?
+#### How many rows will the ``roller_coasters`` table have after executing all the CQL statements?
 
 **A.** none
 
