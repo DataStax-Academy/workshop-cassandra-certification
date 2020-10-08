@@ -16,8 +16,8 @@ This section will run you through a set of practice exam questions. We will spli
 | **[5. CQL](#5-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 | **[6. CQL](#6-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 
-## 1. CQL - Developer and Administrator Exams
-#### Consider the CQL statements:
+### 1. CQL - Developer and Administrator Exams
+Consider the CQL statements:
 ```
 CREATE TABLE roller_coasters (
     name TEXT,
@@ -39,7 +39,7 @@ INSERT INTO roller_coasters (name, park, rating)
   VALUES ('Millenium Force', 'Cedar Point', 7 );
 ```
 
-#### How many rows will the ``roller_coasters`` table have after executing all the CQL statements?
+How many rows will the ``roller_coasters`` table have after executing all the CQL statements?
 
 **A.** none
 
@@ -59,8 +59,8 @@ INSERT INTO roller_coasters (name, park, rating)
 
 [⬆️ Top](#sample-questions)
 
-## 2. CQL - Developer and Administrator Exams
-#### Consider the CQL statements:
+### 2. CQL - Developer and Administrator Exams
+Consider the CQL statements:
 ```
 CREATE TABLE songs (
     artist TEXT,
@@ -82,7 +82,7 @@ INSERT INTO songs (artist, title, length_seconds)
   VALUES ('Frank Sinatra', 'Yesterday', 235 );
 ```
 
-#### What is the result of executing all the CQL statements?
+What is the result of executing all the CQL statements?
 
 **A.** A table with 1 partition. 
 
@@ -102,8 +102,8 @@ INSERT INTO songs (artist, title, length_seconds)
 
 [⬆️ Top](#sample-questions)
 
-## 3. CQL - Developer and Administrator Exams
-#### Consider the CQL statement:
+### 3. CQL - Developer and Administrator Exams
+Consider the CQL statement:
 ```
 CREATE TABLE cars (
     make TEXT,
@@ -115,7 +115,7 @@ CREATE TABLE cars (
 );
 ```
 
-#### Which of the following is a valid query for the cars table?
+Which of the following is a valid query for the cars table?
 
 **A.** 
 ```
@@ -156,8 +156,8 @@ SELECT * FROM cars
 
 [⬆️ Top](#sample-questions)
 
-## 4. CQL - Developer and Administrator Exams
-#### Consider the CQL statements:
+### 4. CQL - Developer and Administrator Exams
+Consider the CQL statements:
 ```
 CREATE TABLE employees (
     id TEXT,
@@ -181,7 +181,7 @@ BEGIN BATCH
       VALUES ('AC1123', 'Joe', 'legal');
 APPLY BATCH;
 ```
-#### What is a valid statement about this atomic batch?
+What is a valid statement about this atomic batch?
 
 **A.** It is a single-partition batch that can be applied.
 
@@ -201,8 +201,8 @@ APPLY BATCH;
 
 [⬆️ Top](#sample-questions)
 
-## 5. CQL - Developer and Administrator Exams
-####  Consider the table definition with a primary key ommitted:
+### 5. CQL - Developer and Administrator Exams
+Consider the table definition with a primary key ommitted:
 ```
 CREATE TABLE restaurant_reviews {
     name TEXT,
@@ -243,8 +243,8 @@ What primary key does this table have?
 
 [⬆️ Top](#sample-questions)
 
-## 6. CQL - Developer and Administrator Exams
-####  Consider the table definition and ``SELECT`` statement:
+### 6. CQL - Developer and Administrator Exams
+Consider the table definition and ``SELECT`` statement:
 ```
 CREATE TABLE teams (
     name TEXT,
