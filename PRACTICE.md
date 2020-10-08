@@ -92,6 +92,13 @@ INSERT INTO songs (artist, title, length_seconds)
 
 **D.** A table with 4 partitions.
 
+<details><summary>Click to view the correct answer</summary>
+<p>
+
+| The correct answer is D |
+|---|
+</p>
+</details>
 
 [⬆️ Top](#sample-questions)
 
@@ -119,8 +126,8 @@ SELECT * FROM cars
 **B.** 
 ```
 SELECT * FROM cars 
-  WHERE make='Ford' 
-  AND model = 'Mustang';
+  WHERE year = 1969 
+  AND coolor = 'Red';
 ```
 
 **C.** 
@@ -138,6 +145,14 @@ SELECT * FROM cars
   AND model = 'Mustang' 
   AND color = 'Red';
 ```
+
+<details><summary>Click to view the correct answer</summary>
+<p>
+
+| The correct answer is C |
+|---|
+</p>
+</details>
 
 [⬆️ Top](#sample-questions)
 
@@ -176,6 +191,14 @@ APPLY BATCH;
 
 **D.** It is a multi-partition batch that cannot be applied.
 
+<details><summary>Click to view the correct answer</summary>
+<p>
+
+| The correct answer is C |
+|---|
+</p>
+</details>
+
 [⬆️ Top](#sample-questions)
 
 ## 5. CQL - Developer and Administrator Exams
@@ -209,6 +232,14 @@ What primary key does this table have?
 
 **D.** 
 ```PRIMARY KEY(name, city, reviewer)```
+
+<details><summary>Click to view the correct answer</summary>
+<p>
+
+| The correct answer is B |
+|---|
+</p>
+</details>
 
 [⬆️ Top](#sample-questions)
 
@@ -257,5 +288,13 @@ CREATE MATERIALIZED VIEW IF NOT EXISTS
       WHERE name IS NOT NULL AND name IS NOT NULL
       PRIMARY KEY((name), wins);
 ```
+
+<details><summary>Click to view the correct answer</summary>
+<p>
+
+| The correct answer is D |
+|---|
+</p>
+</details>
 
 [⬆️ Top](#sample-questions)
