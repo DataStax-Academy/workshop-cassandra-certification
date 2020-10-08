@@ -16,6 +16,7 @@ This section will run you through a set of practice exam questions. We will spli
 | **[5. CQL](#5-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 | **[6. CQL](#6-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 | **[7. CQL](#7-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
+| **[8. CQL](#8-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 
 ### 1. CQL - Developer and Administrator Exams
 Consider the CQL statements:
@@ -356,3 +357,26 @@ CREATE INDEX cuisine_restaurants_by_city_2i
 </details>
 
 [⬆️ Top](#sample-questions)
+
+### 8. CQL - Developer and Administrator Exams
+Which statement describes the ``WHERE`` clause in a query?
+
+**A.** ``WHERE`` clauses must reference all the fields of the partition key.
+
+**B.** ``WHERE`` clauses must reference all the fields of the clustering key.
+
+**C.** ``WHERE`` clauses must reference all the fields of the primary key.
+
+**D.** ``WHERE`` clauses must reference all the fields of the primary key and clustering key.
+
+<details><summary>Click to view the correct answer</summary>
+<p>
+
+| The correct answer is A |
+|:---|
+| Only the fields of the partition key are required. This insures the *partition-per-query* pattern. |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
+
