@@ -418,7 +418,9 @@ INSERT INTO people (id, name, email)
 INSERT INTO people (id, name, email) 
   VALUES (UUID(), ('foo', 'bar), 'foo@datastax.com' );
 ```
-
+<details><summary>Click to view the correct answer</summary>
+<p>
+    
 | The correct answer is A |
 |:---|
 | The fields of the user defined type are passed using JSON. |
@@ -479,6 +481,8 @@ What is the result of executing theses CQL statements?
 -------+--------------------+----------+-------------
  David | david@datastax.com |     Dave |        work
 ```
+<details><summary>Click to view the correct answer</summary>
+<p>
 
 | The correct answer is B |
 |:---|
