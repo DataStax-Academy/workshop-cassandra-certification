@@ -15,6 +15,7 @@ This section will run you through a set of practice exam questions. We will spli
 | **[4. CQL](#4-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 | **[5. CQL](#5-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 | **[6. CQL](#6-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
+| **[7. CQL](#7-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 
 ### 1. CQL - Developer and Administrator Exams
 Consider the CQL statements:
@@ -249,7 +250,7 @@ What primary key does this table have?
 [⬆️ Top](#sample-questions)
 
 ### 6. CQL - Developer and Administrator Exams
-Consider the table definition and ``SELECT`` statement:
+Consider the table definition and the CQL query:
 ```
 CREATE TABLE teams (
     name TEXT,
@@ -260,7 +261,7 @@ CREATE TABLE teams (
 
 SELECT * FROM teams_by_wins WHERE wins = 4;
 ```
-Which materialized view definition can be used to support this ``SELECT``?
+Which materialized view definition can be used to support the qeury?
 
 **A.** 
 ```
@@ -300,6 +301,57 @@ CREATE MATERIALIZED VIEW IF NOT EXISTS
 | The correct answer is D |
 |:---|
 | Since primary key fields cannot be NULL the ``WHERE`` clause must include a *NULL check*. Since the ``WHERE`` clause in the ``SELECT`` is based on ``wins``, ``wins`` must be the partition key. |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
+
+### 7. CQL - Developer and Administrator Exams
+Consider the table definition and the CQL query:
+```
+CREATE TABLE restaurants_by_city (
+    name TEXT,
+    city TEXT,
+    cuisine TEXT,
+    price int,
+    PRIMARY KEY ((city), name)
+);
+
+SELECT * FROM restaurants_by_city
+  WHERE city = 'Sydney'
+  AND cuisine = 'sushi';
+```  
+Which secondary index can be used to support the query?
+
+**A.** 
+```
+CREATE INDEX cuisine_restaurants_by_city_2i
+  ON restaurants_by_city (cuisine);
+```
+**B.**
+
+```
+CREATE INDEX cuisine_restaurants_by_city_2i
+  ON restaurants_by_city (city, cuisine);
+```
+**C.**
+
+```
+CREATE INDEX cuisine_restaurants_by_city_2i
+  ON restaurants_by_city (cuisine, city);
+```
+**D.**
+
+```
+CREATE INDEX cuisine_restaurants_by_city_2i
+  ON restaurants_by_city (city, name, cuisine);
+```
+<details><summary>Click to view the correct answer</summary>
+<p>
+
+| The correct answer is A |
+|:---|
+| The secondary index only needs to specify the field(s) (besides the partition key) that will appear in the ``WHERE`` clause. |
 </p>
 </details>
 
