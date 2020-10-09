@@ -9,19 +9,19 @@ This section will run you through a set of practice exam questions. We will spli
 
 | Question/Topic | Exam(s)
 |---|---|
-| **[1. CQL](#1-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
-| **[2. CQL](#2-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
-| **[3. CQL](#3-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
-| **[4. CQL](#4-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
-| **[5. CQL](#5-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
-| **[6. CQL](#6-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
-| **[7. CQL](#7-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
-| **[8. CQL](#8-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
-| **[9. CQL](#9-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
-| **[10. CQL](#10-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
-| **[11. Architecture](#11-architecture---developer-and-administrator-exams)** | Developer and Adminisrator |
-| **[12. Architecture](#12-architecture---developer-and-administrator-exams)** | Developer and Adminisrator |
-| **[13. Architecture](#13-architecture---developer-and-administrator-exams)** | Developer and Adminisrator |
+| **[1. CQL](#1-cql---developer-and-administrator-exams)** | Developer and Administrator |
+| **[2. CQL](#2-cql---developer-and-administrator-exams)** | Developer and Administrator |
+| **[3. CQL](#3-cql---developer-and-administrator-exams)** | Developer and Administrator |
+| **[4. CQL](#4-cql---developer-and-administrator-exams)** | Developer and Administrator |
+| **[5. CQL](#5-cql---developer-and-administrator-exams)** | Developer and Administrator |
+| **[6. CQL](#6-cql---developer-and-administrator-exams)** | Developer and Administrator |
+| **[7. CQL](#7-cql---developer-and-administrator-exams)** | Developer and Administrator |
+| **[8. CQL](#8-cql---developer-and-administrator-exams)** | Developer and Administrator |
+| **[9. CQL](#9-cql---developer-and-administrator-exams)** | Developer and Administrator |
+| **[10. CQL](#10-cql---developer-and-administrator-exams)** | Developer and Administrator |
+| **[11. Architecture](#11-architecture---developer-and-administrator-exams)** | Developer and Administrator |
+| **[12. Architecture](#12-architecture---developer-and-administrator-exams)** | Developer and Administrator |
+| **[13. Architecture](#13-architecture---developer-and-administrator-exams)** | Developer and Administrator |
 
 ### 1. CQL - Developer and Administrator Exams
 Consider the CQL statements:
