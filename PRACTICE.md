@@ -522,42 +522,56 @@ What is a valid statement about a read request made at consistency level of ``LO
 [⬆️ Top](#sample-questions)
 
 ### 12. Architecture - Developer and Administrator Exams
+Consider these CQL traces:
 
-**A.**
+```
+ activity                                                                     | timestamp                  | source       | source_elapsed | client
+------------------------------------------------------------------------------+----------------------------+--------------+----------------+--------------
+                                                           Execute CQL3 query | 2020-10-09 16:18:49.223000 | 10.52.26.153 |              0 | 10.52.13.186
+ Parsing INSERT INTO NAMES (id, name) VALUES (UUID(), 'Dave'); [CoreThread-0] | 2020-10-09 16:18:49.223000 | 10.52.26.153 |            328 | 10.52.13.186
+                                           Preparing statement [CoreThread-0] | 2020-10-09 16:18:49.223000 | 10.52.26.153 |            690 | 10.52.13.186
+                             Determining replicas for mutation [CoreThread-0] | 2020-10-09 16:18:49.224000 | 10.52.26.153 |           1834 | 10.52.13.186
+                                        Appending to commitlog [CoreThread-0] | 2020-10-09 16:18:49.225000 | 10.52.26.153 |           2193 | 10.52.13.186
+                                      Adding to names memtable [CoreThread-0] | 2020-10-09 16:18:49.225000 | 10.52.26.153 |           2326 | 10.52.13.186
+                                                             Request complete | 2020-10-09 16:18:49.225966 | 10.52.26.153 |           2966 | 10.52.13.186
+```
+At what elapsed time is the data persisted so that it will survive an unexpected node shutdown?
 
-**B.**
+**A.** 690 milliseconds
+ 
+**B.** 1830 milliseconds
 
-**C.**
+**C.** 2193 milliseconds
 
-**D.**
+**D.** 2977 milliseconds
 
 <details><summary>Click to view the correct answer</summary>
 <p>
     
-| The correct answer is XXX |
+| The correct answer is C |
 |:---|
-| XXXXXXX |
+| Once data is written to *commit log* it will survive and unexpected node shutdown. |
 </p>
 </details>
 
 [⬆️ Top](#sample-questions)
 
 ### 13. Architecture - Developer and Administrator Exams
+How is Replication Factor configured in Cassandra?
+**A.** per cluster
 
-**A.**
+**B.** per keyspace
 
-**B.**
+**C.** per operation
 
-**C.**
-
-**D.**
+**D.** per node
 
 <details><summary>Click to view the correct answer</summary>
 <p>
     
-| The correct answer is XXX |
+| The correct answer is B |
 |:---|
-| XXXXXXX |
+| Replication factor (and strategy) *must* be configured when creating a keyspace. |
 </p>
 </details>
 
