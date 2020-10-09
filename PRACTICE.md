@@ -496,16 +496,37 @@ What is the result of executing theses CQL statements?
 [⬆️ Top](#sample-questions)
 
 ### 11. Architectre - Developer and Administrator Exams
+Consider the two datacenters in the diagram. ``TokyoDC`` has six nodes (two *failed* and four *active*) and a replication factor of 3, and ``ParisDC`` four nodes (one *failed* and three *active*) and a replication factor of 3.
 
-| The correct answer is XXX |
+![datacenters](images/5-4-failed.png)
+
+What is a valid statement about a read request made at consistency level of ``LOCAL QUORUM`` to coordinator node ``Z`` in ``ParisDC``?
+
+**A.** The request will be hanled in data center ``ParisDC`` and will fail.
+
+**B.** The request will be hanled in data center ``ParisDC`` and will succeed.
+
+**C.** The request will be retried in data center ``TokyoDC`` and will fail.
+
+**D.** The request will be retried in data center ``TokyoDC`` and will succeed.
+
+| The correct answer is B |
 |:---|
-| XXXXXXX |
+| ``LOCAL QUORUM`` requires a quorum (more than half) of the replicas in a *single data center* to respond in order to succeed. Since only 1 of 4 nodes has failed there will be at least 2 replicas available to handle request. 2 is the quorum of 3, therefore the request will succeed. |
 </p>
 </details>
 
 [⬆️ Top](#sample-questions)
 
 ### 12. Architectre - Developer and Administrator Exams
+
+**A.**
+
+**B.**
+
+**C.**
+
+**D.**
 
 | The correct answer is XXX |
 |:---|
@@ -516,6 +537,14 @@ What is the result of executing theses CQL statements?
 [⬆️ Top](#sample-questions)
 
 ### 13. Architectre - Developer and Administrator Exams
+
+**A.**
+
+**B.**
+
+**C.**
+
+**D.**
 
 | The correct answer is XXX |
 |:---|
