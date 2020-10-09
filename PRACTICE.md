@@ -495,7 +495,7 @@ What is the result of executing theses CQL statements?
 
 [⬆️ Top](#sample-questions)
 
-### 11. Architectre - Developer and Administrator Exams
+### 11. Architecture - Developer and Administrator Exams
 Consider the two datacenters in the diagram. ``TokyoDC`` has six nodes (two *failed* and four *active*) and a replication factor of 3, and ``ParisDC`` four nodes (one *failed* and three *active*) and a replication factor of 3.
 
 ![datacenters](images/5-4-failed.png)
@@ -518,7 +518,7 @@ What is a valid statement about a read request made at consistency level of ``LO
 
 [⬆️ Top](#sample-questions)
 
-### 12. Architectre - Developer and Administrator Exams
+### 12. Architecture - Developer and Administrator Exams
 
 **A.**
 
@@ -536,7 +536,7 @@ What is a valid statement about a read request made at consistency level of ``LO
 
 [⬆️ Top](#sample-questions)
 
-### 13. Architectre - Developer and Administrator Exams
+### 13. Architecture - Developer and Administrator Exams
 
 **A.**
 
