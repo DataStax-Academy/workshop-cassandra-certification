@@ -213,7 +213,7 @@ What is a valid statement about this atomic batch?
 [⬆️ Top](#sample-questions)
 
 ### 5. CQL - Developer and Administrator Exams
-Consider the table definition with a primary key ommitted:
+Consider the table definition with a primary key omitted:
 ```
 CREATE TABLE restaurant_reviews {
     name TEXT,
@@ -249,7 +249,7 @@ What primary key does this table have?
 
 | The correct answer is B |
 | :--- |
-| Since Restaurant Reviews are uniquely identified by a combination of ``name``, ``city`` and ``reviewer`` the primary key must include all three fields. Since Restaurant Reviews are retrieved from the table using combination of ``name``, ``city``, these two fields must comprise the *partition key*. Since this table has multi-row partitionsand ``reviewer`` is part of the primary key, it must be a clustering column.|
+| Since Restaurant Reviews are uniquely identified by a combination of ``name``, ``city`` and ``reviewer`` the primary key must include all three fields. Since Restaurant Reviews are retrieved from the table using combination of ``name``, ``city``, these two fields must comprise the *partition key*. Since this table has multi-row partitions and ``reviewer`` is part of the primary key, it must be a clustering column.|
 </p>
 </details>
 
@@ -267,7 +267,7 @@ CREATE TABLE teams (
 
 SELECT * FROM teams_by_wins WHERE wins = 4;
 ```
-Which materialized view definition can be used to support the qeury?
+Which materialized view definition can be used to support the query?
 
 **A.** 
 ```
@@ -401,6 +401,7 @@ CREATE TABLE people (
 );
 ```
 Which ``INSERT`` statement can be used to insert a row in the ``people`` table?
+
 **A.**
 ```
 INSERT INTO people (id, name, email) 
