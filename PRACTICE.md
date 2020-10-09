@@ -510,6 +510,9 @@ What is a valid statement about a read request made at consistency level of ``LO
 
 **D.** The request will be retried in data center ``TokyoDC`` and will succeed.
 
+<details><summary>Click to view the correct answer</summary>
+<p>
+    
 | The correct answer is B |
 |:---|
 | ``LOCAL QUORUM`` requires a quorum (more than half) of the replicas in a *single data center* to respond in order to succeed. Since only 1 of 4 nodes has failed there will be at least 2 replicas available to handle request. 2 is the quorum of 3, therefore the request will succeed. |
@@ -528,6 +531,9 @@ What is a valid statement about a read request made at consistency level of ``LO
 
 **D.**
 
+<details><summary>Click to view the correct answer</summary>
+<p>
+    
 | The correct answer is XXX |
 |:---|
 | XXXXXXX |
@@ -546,6 +552,9 @@ What is a valid statement about a read request made at consistency level of ``LO
 
 **D.**
 
+<details><summary>Click to view the correct answer</summary>
+<p>
+    
 | The correct answer is XXX |
 |:---|
 | XXXXXXX |
