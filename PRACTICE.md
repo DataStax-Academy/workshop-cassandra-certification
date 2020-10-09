@@ -19,6 +19,9 @@ This section will run you through a set of practice exam questions. We will spli
 | **[8. CQL](#8-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 | **[9. CQL](#9-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
 | **[10. CQL](#10-cql---developer-and-administrator-exams)** | Developer and Adminisrator |
+| **[11. Architecture](#10-architecture---developer-and-administrator-exams)** | Developer and Adminisrator |
+| **[12. Architecture](#10-architecture---developer-and-administrator-exams)** | Developer and Adminisrator |
+| **[13. Architecture](#10-architecture---developer-and-administrator-exams)** | Developer and Adminisrator |
 
 ### 1. CQL - Developer and Administrator Exams
 Consider the CQL statements:
@@ -487,6 +490,36 @@ What is the result of executing theses CQL statements?
 | The correct answer is B |
 |:---|
 | The ``nickname`` field is static so both rows were set to *Davey*. Because ``email`` is a clustering column the table has two partitions. |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
+
+### 11. Architectre - Developer and Administrator Exams
+
+| The correct answer is XXX |
+|:---|
+| XXXXXXX |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
+
+### 12. Architectre - Developer and Administrator Exams
+
+| The correct answer is XXX |
+|:---|
+| XXXXXXX |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
+
+### 13. Architectre - Developer and Administrator Exams
+
+| The correct answer is XXX |
+|:---|
+| XXXXXXX |
 </p>
 </details>
 
