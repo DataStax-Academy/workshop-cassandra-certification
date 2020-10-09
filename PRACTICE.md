@@ -502,9 +502,9 @@ Consider the two datacenters in the diagram. ``TokyoDC`` has six nodes (two *fai
 
 What is a valid statement about a read request made at consistency level of ``LOCAL QUORUM`` to coordinator node ``Z`` in ``ParisDC``?
 
-**A.** The request will be hanled in data center ``ParisDC`` and will fail.
+**A.** The request will be handled in data center ``ParisDC`` and will fail.
 
-**B.** The request will be hanled in data center ``ParisDC`` and will succeed.
+**B.** The request will be handled in data center ``ParisDC`` and will succeed.
 
 **C.** The request will be retried in data center ``TokyoDC`` and will fail.
 
