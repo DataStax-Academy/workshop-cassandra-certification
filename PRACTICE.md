@@ -558,6 +558,7 @@ At what elapsed time is the data persisted so that it will survive an unexpected
 
 ### 13. Architecture - Developer and Administrator Exams
 How is Replication Factor configured in Cassandra?
+
 **A.** per cluster
 
 **B.** per keyspace
