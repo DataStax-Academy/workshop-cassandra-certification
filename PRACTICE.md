@@ -24,8 +24,8 @@ This section will run you through a set of practice exam questions. We will spli
 | **[13. Architecture](#13-architecture---developer-and-administrator-exams)** | Developer and Administrator |
 | **[14. Data Modeling](#14-data-modeling---developer-exam)** | Developer |
 | **[15. Data Modeling](#15-data-modeling---developer-exam)** | Developer |
-| **[16. Configuration](#16-configuration----administrator-exam)** | Administrator |
-| **[17. Configuration](#17-configuration----administrator-exam)** | Administrator |
+| **[16. Configuration](#16-configuration---administrator-exam)** | Administrator |
+| **[17. Configuration](#17-configuration---administrator-exam)** | Administrator |
 | **[18. Read/Write/Storage](#18-read/write/storage---administrator-exams)** | Administrator |
 | **[19. Read/Write/Storage](#19-read/write/storage---administrator-exams)** | Administrator |
 | **[20. Read/Write/Storage](#20-read/write/storage---administrator-exams)** | Administrator |
