@@ -582,7 +582,7 @@ How is Replication Factor configured in Cassandra?
 [⬆️ Top](#sample-questions)
 
 ### 14. Data Modeling - Developer Exam
-Consider the Chebotko Diagram that captures the physical data model for investment data:
+Consider the Chebotko Diagram that captures the physical data model for investment portfolio data:
 
 ![physical data model](images/investment-physical.png)
 
@@ -653,7 +653,7 @@ WITH CLUSTERING ORDER BY (symbol ASC, type ASC, trade_id DESC);
     
 | The correct answer is D |
 |:---|
-| XXX |
+| Chebotko diagrams list clustering keys in the order they appear in the primary key and the ``WITH CLUSTERING ORDER BY`` (if present) clause *must* specify the ordering for the *leftmost* clustering key(s).|
 </p>
 </details>
 
@@ -661,7 +661,9 @@ WITH CLUSTERING ORDER BY (symbol ASC, type ASC, trade_id DESC);
 [⬆️ Top](#sample-questions)
 
 ### 15. Data Modeling - Developer Exam
-AAA
+Consider the Application Workflow Diagram for an investment portfolio application"
+
+![application workflow](images/investment-workflow.png)
 
 **A.** 
 
