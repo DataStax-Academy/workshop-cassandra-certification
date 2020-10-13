@@ -23,7 +23,7 @@ This section will run you through a set of practice exam questions. We will spli
 | **[12. Architecture](#12-architecture---developer-and-administrator-exams)** | Developer and Administrator |
 | **[13. Architecture](#13-architecture---developer-and-administrator-exams)** | Developer and Administrator |
 | **[14. Data Modeling](#14-data-modeling---developer-exam)** | Developer |
-| **[15. Data Modeling](#14-data-modeling---developer-exam)** | Developer |
+| **[15. Data Modeling](#15-data-modeling---developer-exam)** | Developer |
 
 ### 1. CQL - Developer and Administrator Exams
 Consider the CQL statements:
@@ -665,20 +665,22 @@ Consider the Application Workflow Diagram for an investment portfolio applicatio
 
 ![application workflow](images/investment-application.png)
 
-**A.** 
+Which data access patterns can be implemented using the same table? 
 
-**B.** 
+**A.** Q<sub>3.1</sub> and Q<sub>3.2</sub>
 
-**C.** 
+**B.** Q<sub>3.2</sub> and Q<sub>3.3</sub>
 
-**D.** 
+**C.** Q<sub>3.3</sub> and Q<sub>3.4</sub>
+
+**D.** Q<sub>3.4</sub> and Q<sub>3.5</sub>
 
 <details><summary>Click to view the correct answer</summary>
 <p>
     
-| The correct answer is XX |
+| The correct answer is A |
 |:---|
-| XXX |
+| Q<sub>3.1</sub> and Q<sub>3.2</sub> access the same data in the same order. The only difference is that Q<sub>3.2</sub> retrieves data for a date range but both Q<sub>3.1</sub> and Q<sub>3.2</sub> require data ordered by date descending so they can use the same table. |
 </p>
 </details>
 
