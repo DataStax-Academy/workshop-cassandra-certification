@@ -684,22 +684,22 @@ What are two options for ``internode_encryption`` in Cassandra? (Choose two.)
 [⬆️ Top](#sample-questions)
 
 ### 17. Configuration - Administrator Exam
-AAA
+Which configuration file is used to set garbage collection properties for Cassandra?
 
-**A.**
+**A.** ``cassandra.yaml``
 
-**B.**
+**B.** ``jvm.options``
 
-**C.**
+**C.** ``cassandra-env.sh``
 
-**D.**
+**D.** ``gc.options``
 
 <details><summary>Click to view the correct answer</summary>
 <p>
     
-| The correct answer is XXX |
+| The correct answer is B |
 |:---|
-| xxx |
+| The purpose of the ``jvm.options`` file is to put JVM-specific properites (like garbage collection) in one place. |
 </p>
 </details>
 
