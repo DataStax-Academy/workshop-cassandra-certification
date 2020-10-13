@@ -660,23 +660,24 @@ Which data access patterns can be implemented using the same table?
 [⬆️ Top](#sample-questions)
 
 ### 16. Configuration - Administrator Exam
-AAA
+What are two options for ``internode_encryption`` in Cassandra? (Choose two.)
 
-**A.**
+**A.** ``client``
 
-**B.**
+**B.** ``node``
 
-**C.**
+**C.** ``rack``
 
-**D.**
+**D.** ``enabled``
 
+**E.** ``dc``
 
-<details><summary>Click to view the correct answer</summary>
+<details><summary>Click to view the correct answers</summary>
 <p>
     
-| The correct answer is XXX |
+| The correct answers are C and E |
 |:---|
-| xxx |
+| The available options ar: ``all``, ``none``, ``dc`` and ``rack``. |
 </p>
 </details>
 
@@ -692,7 +693,6 @@ AAA
 **C.**
 
 **D.**
-
 
 <details><summary>Click to view the correct answer</summary>
 <p>
@@ -716,7 +716,6 @@ AAA
 
 **D.**
 
-
 <details><summary>Click to view the correct answer</summary>
 <p>
     
@@ -738,7 +737,6 @@ AAA
 **C.**
 
 **D.**
-
 
 <details><summary>Click to view the correct answer</summary>
 <p>
