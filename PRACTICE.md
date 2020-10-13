@@ -24,6 +24,11 @@ This section will run you through a set of practice exam questions. We will spli
 | **[13. Architecture](#13-architecture---developer-and-administrator-exams)** | Developer and Administrator |
 | **[14. Data Modeling](#14-data-modeling---developer-exam)** | Developer |
 | **[15. Data Modeling](#15-data-modeling---developer-exam)** | Developer |
+| **[16. Configuration](#16-configuration----administrator-exam)** | Administrator |
+| **[17. Configuration](#17-configuration----administrator-exam)** | Administrator |
+| **[18. Read/Write/Storage](#18-read/write/storage---administrator-exams)** | Administrator |
+| **[19. Read/Write/Storage](#19-read/write/storage---administrator-exams)** | Administrator |
+| **[20. Read/Write/Storage](#20-read/write/storage---administrator-exams)** | Administrator |
 
 ### 1. CQL - Developer and Administrator Exams
 Consider the CQL statements:
@@ -654,3 +659,117 @@ Which data access patterns can be implemented using the same table?
 
 [⬆️ Top](#sample-questions)
 
+### 16. Configuration - Administrator Exam
+AAA
+
+**A.**
+
+**B.**
+
+**C.**
+
+**D.**
+
+
+<details><summary>Click to view the correct answer</summary>
+<p>
+    
+| The correct answer is XXX |
+|:---|
+| xxx |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
+
+### 17. Configuration - Administrator Exam
+AAA
+
+**A.**
+
+**B.**
+
+**C.**
+
+**D.**
+
+
+<details><summary>Click to view the correct answer</summary>
+<p>
+    
+| The correct answer is XXX |
+|:---|
+| xxx |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
+
+### 18. Read/Write/Storage - Administrator Exam
+AAA
+
+**A.**
+
+**B.**
+
+**C.**
+
+**D.**
+
+
+<details><summary>Click to view the correct answer</summary>
+<p>
+    
+| The correct answer is XXX |
+|:---|
+| xxx |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
+
+### 19. Read/Write/Storage - Administrator Exam
+AAA
+
+**A.**
+
+**B.**
+
+**C.**
+
+**D.**
+
+
+<details><summary>Click to view the correct answer</summary>
+<p>
+    
+| The correct answer is XXX |
+|:---|
+| xxx |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
+
+### 20. Read/Write/Storage - Administrator Exam
+AAA
+
+**A.**
+
+**B.**
+
+**C.**
+
+**D.**
+
+
+<details><summary>Click to view the correct answer</summary>
+<p>
+    
+| The correct answer is XXX |
+|:---|
+| xxx |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
