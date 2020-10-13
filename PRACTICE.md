@@ -661,9 +661,9 @@ WITH CLUSTERING ORDER BY (symbol ASC, type ASC, trade_id DESC);
 [⬆️ Top](#sample-questions)
 
 ### 15. Data Modeling - Developer Exam
-Consider the Application Workflow Diagram for an investment portfolio application"
+Consider the Application Workflow Diagram for an investment portfolio application:
 
-![application workflow](images/investment-workflow.png)
+![application workflow](images/investment-application.png)
 
 **A.** 
 
