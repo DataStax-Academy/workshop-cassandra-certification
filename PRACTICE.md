@@ -22,6 +22,8 @@ This section will run you through a set of practice exam questions. We will spli
 | **[11. Architecture](#11-architecture---developer-and-administrator-exams)** | Developer and Administrator |
 | **[12. Architecture](#12-architecture---developer-and-administrator-exams)** | Developer and Administrator |
 | **[13. Architecture](#13-architecture---developer-and-administrator-exams)** | Developer and Administrator |
+| **[14. Data Modeling](#14-data-modeling---developer-exam)** | Developer |
+| **[15. Data Modeling](#14-data-modeling---developer-exam)** | Developer |
 
 ### 1. CQL - Developer and Administrator Exams
 Consider the CQL statements:
@@ -574,6 +576,51 @@ How is Replication Factor configured in Cassandra?
 | The correct answer is B |
 |:---|
 | Replication factor (and strategy) *must* be configured when creating a keyspace. |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
+
+### 14. Data Modeling - Developer Exam
+Consider the Chebotko Diagram that captures the physical data model for investment data:
+
+**A.** 
+
+**B.** 
+
+**C.** 
+
+**D.** 
+
+<details><summary>Click to view the correct answer</summary>
+<p>
+    
+| The correct answer is XX |
+|:---|
+| XXX |
+</p>
+</details>
+
+
+[⬆️ Top](#sample-questions)
+
+### 15. Data Modeling - Developer Exam
+AAA
+
+**A.** 
+
+**B.** 
+
+**C.** 
+
+**D.** 
+
+<details><summary>Click to view the correct answer</summary>
+<p>
+    
+| The correct answer is XX |
+|:---|
+| XXX |
 </p>
 </details>
 
