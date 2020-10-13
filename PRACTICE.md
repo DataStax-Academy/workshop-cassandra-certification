@@ -699,22 +699,22 @@ What are the current values for this row?
 [⬆️ Top](#sample-questions)
 
 ### 17. Read/Write/Storage - Administrator Exam
-AAA
+What is a valid statement about a coordinator node handling a query at consistency level ``CL_THREE``?
 
-**A.**
+**A.** The coordinator sends a direct read request to all replicas.
 
-**B.**
+**B.** The coordinator sends a direct read request to a three replicas.
 
-**C.**
+**C.** The coordinator sends a background read repair request to three replicas.
 
-**D.**
+**D.** The coordinator sends a direct read request to one replica and digest requests to two replicas.
 
 <details><summary>Click to view the correct answer</summary>
 <p>
     
-| The correct answer is XXX |
+| The correct answer is D |
 |:---|
-| xxx |
+| The coordinator node only sends a *direct read* request to one node and sends *digest* request to the remainder necessary to meet the consistency level. The coordinator then compares the data read directly with the digest(s) if they agree the result is returned to the client. If they do not agree the most recent timestamped result is considered current and sent to the client. Th coordinator node may need to request the latest time stamped version from a replica. |
 </p>
 </details>
 
