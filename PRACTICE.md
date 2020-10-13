@@ -26,9 +26,9 @@ This section will run you through a set of practice exam questions. We will spli
 | **[15. Data Modeling](#15-data-modeling---developer-exam)** | Developer |
 | **[16. Configuration](#16-configuration---administrator-exam)** | Administrator |
 | **[17. Configuration](#17-configuration---administrator-exam)** | Administrator |
-| **[18. Read/Write/Storage](#18-readwritestorage---administrator-exams)** | Administrator |
-| **[19. Read/Write/Storage](#19-readwritestorage---administrator-exams)** | Administrator |
-| **[20. Read/Write/Storage](#20-readwritestorage---administrator-exams)** | Administrator |
+| **[18. Read/Write/Storage](#18-readwritestorage---administrator-exam)** | Administrator |
+| **[19. Read/Write/Storage](#19-readwritestorage---administrator-exam)** | Administrator |
+| **[20. Read/Write/Storage](#20-readwritestorage---administrator-exam)** | Administrator |
 
 ### 1. CQL - Developer and Administrator Exams
 Consider the CQL statements:
