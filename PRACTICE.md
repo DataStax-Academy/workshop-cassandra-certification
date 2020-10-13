@@ -706,22 +706,65 @@ Which configuration file is used to set garbage collection properties for Cassan
 [⬆️ Top](#sample-questions)
 
 ### 18. Read/Write/Storage - Administrator Exam
-AAA
+Consider the table definition and how a single row is stored in two SSTables on a Cassandra node:
+
+```
+CREATE TABLE (
+    id INT PRIMARY KEY,
+    test TEXT,
+    score int,
+)
+```
+**Memtable**
+```
+id: 11 timestamp: 1392353211
+score: 75 timestamp: 1392353211
+```                   
+**Memtable**
+```
+id: 11 timestamp: 1204596828
+test: math timestamp: 1204596828
+score: 62 timestamp: 1204596828
+```                  
+**Memtable**
+```
+id: 11 timestamp: 1183608357
+test: english timestamp: 1183608357
+score: 48 timestamp: 1183608357
+```
+
+What are the current values for this row?
 
 **A.**
-
+```
+ id | test    | score
+----+---------+-----
+ 11 | english | 48
+```
 **B.**
-
+```
+ id | test | score
+----+------+-----
+ 11 | math |  75
+```
 **C.**
-
+```
+ id | test | score
+----+------+-----
+ 11 | math |  62
+```
 **D.**
+```
+ id | test | score
+ 11 | math |  48
+```
 
 <details><summary>Click to view the correct answer</summary>
 <p>
     
-| The correct answer is XXX |
+| The correct answer is B |
 |:---|
-| xxx |
+| Data for a row may be spread across the memtable and multipls SSTables. The row value is made up of the most recent (timestamp) value for each column. |
 </p>
 </details>
 
