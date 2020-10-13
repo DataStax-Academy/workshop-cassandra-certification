@@ -586,18 +586,10 @@ Consider the Chebotko Diagram that captures the physical data model for investme
 
 ![physical data model](images/investment-physical.png)
 
-What is the primary key of the table ``trades_by_a_std``?
+What is the primary key and clustering order of the table ``trades_by_a_std``?
 
 **A.** 
 ```
-CREATE TABLE trades_by_a_std (
-    account TEXT,
-    symbol TEXT,
-    type TEXT,
-    trade_id TIMEUUID,
-    shares DECIMAL,
-    price DECIMAL,
-    amount DECIMAL,
     PRIMARY KEY((account), trade_id, symbol, type)
 )
 WITH CLUSTERING ORDER BY (trade_id DESC, symbol ASC, type ASC);
@@ -605,14 +597,6 @@ WITH CLUSTERING ORDER BY (trade_id DESC, symbol ASC, type ASC);
 
 **B.** 
 ```
-CREATE TABLE trades_by_a_std (
-    account TEXT,
-    symbol TEXT,
-    type TEXT,
-    trade_id TIMEUUID,
-    shares DECIMAL,
-    price DECIMAL,
-    amount DECIMAL,
     PRIMARY KEY((account), trade_id, symbol, type)
 )
 WITH CLUSTERING ORDER BY (trade_id DESC);
@@ -620,14 +604,6 @@ WITH CLUSTERING ORDER BY (trade_id DESC);
 
 **C.** 
 ```
-CREATE TABLE trades_by_a_std (
-    account TEXT,
-    symbol TEXT,
-    type TEXT,
-    trade_id TIMEUUID,
-    shares DECIMAL,
-    price DECIMAL,
-    amount DECIMAL,
     PRIMARY KEY((account),symbol, type, trade_id)
 )
 WITH CLUSTERING ORDER BY (trade_id DESC);
@@ -635,14 +611,6 @@ WITH CLUSTERING ORDER BY (trade_id DESC);
 
 **D.** 
 ```
-CREATE TABLE trades_by_a_std (
-    account TEXT,
-    symbol TEXT,
-    type TEXT,
-    trade_id TIMEUUID,
-    shares DECIMAL,
-    price DECIMAL,
-    amount DECIMAL,
     PRIMARY KEY((account),symbol, type, trade_id)
 )
 WITH CLUSTERING ORDER BY (symbol ASC, type ASC, trade_id DESC);
