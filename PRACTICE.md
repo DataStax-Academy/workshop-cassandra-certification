@@ -22,13 +22,13 @@ This section will run you through a set of practice exam questions. We will spli
 | **[11. Architecture](#11-architecture---developer-and-administrator-exams)** | Developer and Administrator |
 | **[12. Architecture](#12-architecture---developer-and-administrator-exams)** | Developer and Administrator |
 | **[13. Architecture](#13-architecture---developer-and-administrator-exams)** | Developer and Administrator |
-| **[14. Data Modeling](#14-data-modeling---developer-exam)** | Developer |
-| **[15. Data Modeling](#15-data-modeling---developer-exam)** | Developer |
-| **[16. Configuration](#16-configuration---administrator-exam)** | Administrator |
-| **[17. Configuration](#17-configuration---administrator-exam)** | Administrator |
+| **[14. Configuration](#14-configuration---administrator-exam)** | Administrator |
+| **[15. Configuration](#15-configuration---administrator-exam)** | Administrator |
+| **[16. Read/Write/Storage](#16-readwritestorage---administrator-exam)** | Administrator |
+| **[17. Read/Write/Storage](#17-readwritestorage---administrator-exam)** | Administrator |
 | **[18. Read/Write/Storage](#18-readwritestorage---administrator-exam)** | Administrator |
-| **[19. Read/Write/Storage](#19-readwritestorage---administrator-exam)** | Administrator |
-| **[20. Read/Write/Storage](#20-readwritestorage---administrator-exam)** | Administrator |
+| **[19. Data Modeling](#19-data-modeling---developer-exam)** | Developer |
+| **[20. Data Modeling](#20-data-modeling---developer-exam)** | Developer |
 
 ### 1. CQL - Developer and Administrator Exams
 Consider the CQL statements:
@@ -586,7 +586,164 @@ How is Replication Factor configured in Cassandra?
 
 [⬆️ Top](#sample-questions)
 
-### 14. Data Modeling - Developer Exam
+### 14. Configuration - Administrator Exam
+What are two options for ``internode_encryption`` in Cassandra? (Choose two.)
+
+**A.** ``client``
+
+**B.** ``node``
+
+**C.** ``rack``
+
+**D.** ``enabled``
+
+**E.** ``dc``
+
+<details><summary>Click to view the correct answers</summary>
+<p>
+    
+| The correct answers are C and E |
+|:---|
+| The available options ar: ``all``, ``none``, ``dc`` and ``rack``. |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
+
+### 15. Configuration - Administrator Exam
+Which configuration file is used to set garbage collection properties for Cassandra?
+
+**A.** ``cassandra.yaml``
+
+**B.** ``jvm.options``
+
+**C.** ``cassandra-env.sh``
+
+**D.** ``gc.options``
+
+<details><summary>Click to view the correct answer</summary>
+<p>
+    
+| The correct answer is B |
+|:---|
+| The purpose of the ``jvm.options`` file is to put JVM-specific properites (like garbage collection) in one place. |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
+
+### 16. Read/Write/Storage - Administrator Exam
+Consider the table definition and how a single row is stored in two SSTables on a Cassandra node:
+
+```
+CREATE TABLE (
+    id INT PRIMARY KEY,
+    test TEXT,
+    score int,
+)
+```
+**Memtable**
+```
+id: 11 timestamp: 1392353211
+score: 75 timestamp: 1392353211
+```                   
+**Memtable**
+```
+id: 11 timestamp: 1204596828
+test: math timestamp: 1204596828
+score: 62 timestamp: 1204596828
+```                  
+**Memtable**
+```
+id: 11 timestamp: 1183608357
+test: english timestamp: 1183608357
+score: 48 timestamp: 1183608357
+```
+
+What are the current values for this row?
+
+**A.**
+```
+ id | test    | score
+----+---------+-------
+ 11 | english |    48
+```
+**B.**
+```
+ id | test | score
+----+------+-------
+ 11 | math |    75
+```
+**C.**
+```
+ id | test | score
+----+------+-------
+ 11 | math |    62
+```
+**D.**
+```
+ id | test | score
+----+------+-------
+ 11 | math |    48
+```
+
+<details><summary>Click to view the correct answer</summary>
+<p>
+    
+| The correct answer is B |
+|:---|
+| Data for a row may be spread across the memtable and multipls SSTables. The row value is made up of the most recent (timestamp) value for each column. |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
+
+### 17. Read/Write/Storage - Administrator Exam
+AAA
+
+**A.**
+
+**B.**
+
+**C.**
+
+**D.**
+
+<details><summary>Click to view the correct answer</summary>
+<p>
+    
+| The correct answer is XXX |
+|:---|
+| xxx |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
+
+### 18. Read/Write/Storage - Administrator Exam
+AAA
+
+**A.**
+
+**B.**
+
+**C.**
+
+**D.**
+
+
+<details><summary>Click to view the correct answer</summary>
+<p>
+    
+| The correct answer is XXX |
+|:---|
+| xxx |
+</p>
+</details>
+
+[⬆️ Top](#sample-questions)
+
+### 19. Data Modeling - Developer Exam
 Consider the Chebotko Diagram that captures the physical data model for investment portfolio data:
 
 ![physical data model](images/investment-physical.png)
@@ -633,7 +790,7 @@ WITH CLUSTERING ORDER BY (symbol ASC, type ASC, trade_id DESC);
 
 [⬆️ Top](#sample-questions)
 
-### 15. Data Modeling - Developer Exam
+### 20. Data Modeling - Developer Exam
 Consider the Application Workflow Diagram for an investment portfolio application:
 
 ![application workflow](images/investment-application.png)
@@ -654,162 +811,6 @@ Which data access patterns can be implemented using the same table?
 | The correct answer is A |
 |:---|
 | Q<sub>3.1</sub> and Q<sub>3.2</sub> access the same data in the same order. The only difference is that Q<sub>3.2</sub> retrieves data for a date range but both Q<sub>3.1</sub> and Q<sub>3.2</sub> require data ordered by date descending so they can use the same table. |
-</p>
-</details>
-
-[⬆️ Top](#sample-questions)
-
-### 16. Configuration - Administrator Exam
-What are two options for ``internode_encryption`` in Cassandra? (Choose two.)
-
-**A.** ``client``
-
-**B.** ``node``
-
-**C.** ``rack``
-
-**D.** ``enabled``
-
-**E.** ``dc``
-
-<details><summary>Click to view the correct answers</summary>
-<p>
-    
-| The correct answers are C and E |
-|:---|
-| The available options ar: ``all``, ``none``, ``dc`` and ``rack``. |
-</p>
-</details>
-
-[⬆️ Top](#sample-questions)
-
-### 17. Configuration - Administrator Exam
-Which configuration file is used to set garbage collection properties for Cassandra?
-
-**A.** ``cassandra.yaml``
-
-**B.** ``jvm.options``
-
-**C.** ``cassandra-env.sh``
-
-**D.** ``gc.options``
-
-<details><summary>Click to view the correct answer</summary>
-<p>
-    
-| The correct answer is B |
-|:---|
-| The purpose of the ``jvm.options`` file is to put JVM-specific properites (like garbage collection) in one place. |
-</p>
-</details>
-
-[⬆️ Top](#sample-questions)
-
-### 18. Read/Write/Storage - Administrator Exam
-Consider the table definition and how a single row is stored in two SSTables on a Cassandra node:
-
-```
-CREATE TABLE (
-    id INT PRIMARY KEY,
-    test TEXT,
-    score int,
-)
-```
-**Memtable**
-```
-id: 11 timestamp: 1392353211
-score: 75 timestamp: 1392353211
-```                   
-**Memtable**
-```
-id: 11 timestamp: 1204596828
-test: math timestamp: 1204596828
-score: 62 timestamp: 1204596828
-```                  
-**Memtable**
-```
-id: 11 timestamp: 1183608357
-test: english timestamp: 1183608357
-score: 48 timestamp: 1183608357
-```
-
-What are the current values for this row?
-
-**A.**
-```
- id | test    | score
-----+---------+-----
- 11 | english | 48
-```
-**B.**
-```
- id | test | score
-----+------+-----
- 11 | math |  75
-```
-**C.**
-```
- id | test | score
-----+------+-----
- 11 | math |  62
-```
-**D.**
-```
- id | test | score
- 11 | math |  48
-```
-
-<details><summary>Click to view the correct answer</summary>
-<p>
-    
-| The correct answer is B |
-|:---|
-| Data for a row may be spread across the memtable and multipls SSTables. The row value is made up of the most recent (timestamp) value for each column. |
-</p>
-</details>
-
-[⬆️ Top](#sample-questions)
-
-### 19. Read/Write/Storage - Administrator Exam
-AAA
-
-**A.**
-
-**B.**
-
-**C.**
-
-**D.**
-
-<details><summary>Click to view the correct answer</summary>
-<p>
-    
-| The correct answer is XXX |
-|:---|
-| xxx |
-</p>
-</details>
-
-[⬆️ Top](#sample-questions)
-
-### 20. Read/Write/Storage - Administrator Exam
-AAA
-
-**A.**
-
-**B.**
-
-**C.**
-
-**D.**
-
-
-<details><summary>Click to view the correct answer</summary>
-<p>
-    
-| The correct answer is XXX |
-|:---|
-| xxx |
 </p>
 </details>
 
