@@ -721,23 +721,22 @@ What is a valid statement about a coordinator node handling a query at consisten
 [⬆️ Top](#sample-questions)
 
 ### 18. Read/Write/Storage - Administrator Exam
-AAA
+What is a valid statement about a write made at consistency level ``LOCAL_QUORUM`` against a keyspace with replecation factor of ``3``?
 
-**A.**
+**A.** The coordinator node will send a write to one node.
 
-**B.**
+**B.** The coordinator node will send writes to two nodes.
 
-**C.**
+**C.** The coordinaor node will send writes to three nodes.
 
-**D.**
-
+**D.** The coodinator node will send writes to all nodes.
 
 <details><summary>Click to view the correct answer</summary>
 <p>
     
-| The correct answer is XXX |
+| The correct answer is C |
 |:---|
-| xxx |
+| The coordinator node will always attemp to write to the number of nodes specified in the replication factor. |
 </p>
 </details>
 
