@@ -604,7 +604,7 @@ What are two options for ``internode_encryption`` in Cassandra? (Choose two.)
     
 | The correct answers are C and E |
 |:---|
-| The available options ar: ``all``, ``none``, ``dc`` and ``rack``. |
+| The available options are: ``all``, ``none``, ``dc`` and ``rack``. |
 </p>
 </details>
 
