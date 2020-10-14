@@ -626,7 +626,7 @@ Which configuration file is used to set garbage collection properties for Cassan
     
 | The correct answer is B |
 |:---|
-| The purpose of the ``jvm.options`` file is to put JVM-specific properites (like garbage collection) in one place. |
+| The purpose of the ``jvm.options`` file is to put JVM-specific properties (like garbage collection) in one place. |
 </p>
 </details>
 
