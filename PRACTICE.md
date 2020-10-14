@@ -714,7 +714,7 @@ What is a valid statement about a coordinator node handling a query at consisten
     
 | The correct answer is D |
 |:---|
-| The coordinator node only sends a *direct read* request to one node and sends *digest* request(s) to the remainder necessary to meet the consistency level. The coordinator node then compares the data read directly with the digest(s). If they agree the result is returned to the client. If they do not agree the most recent timestamped result is considered current and sent to the client. Th coordinator node may need to request the latest timestamped version from a replica. |
+| The coordinator node only sends a *direct read* request to one node and sends *digest* request(s) to the remainder necessary to meet the consistency level. The coordinator node then compares the data read directly with the digest(s). If they agree the result is returned to the client. If they do not agree the most recent timestamped result is considered current and sent to the client. The coordinator node may need to request the latest timestamped version from a replica. |
 </p>
 </details>
 
