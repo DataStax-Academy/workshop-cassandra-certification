@@ -240,7 +240,7 @@ It is known that:
 What primary key does this table have?
 
 **A.** 
-```PRIMARY KEY((name), city, reviewer)```
+```PRIMARY KEY((name), reviewer, city)```
 
 **B.** 
 ```PRIMARY KEY((name, city), reviewer)```
@@ -249,7 +249,7 @@ What primary key does this table have?
 ```PRIMARY KEY((name, reviewer), city)```
 
 **D.** 
-```PRIMARY KEY(name, city, reviewer)```
+```PRIMARY KEY(reviewer, name city)```
 
 <details><summary>Click to view the correct answer</summary>
 <p>
