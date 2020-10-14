@@ -647,13 +647,13 @@ CREATE TABLE (
 id: 11 timestamp: 1392353211
 score: 75 timestamp: 1392353211
 ```                   
-**Memtable**
+**SSTable**
 ```
 id: 11 timestamp: 1204596828
 test: math timestamp: 1204596828
 score: 62 timestamp: 1204596828
 ```                  
-**Memtable**
+**SSTable**
 ```
 id: 11 timestamp: 1183608357
 test: english timestamp: 1183608357
