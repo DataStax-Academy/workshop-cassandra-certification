@@ -794,22 +794,22 @@ Consider the Application Workflow Diagram for an investment portfolio applicatio
 
 ![application workflow](images/investment-application.png)
 
-Which data access patterns can be implemented using the same table? 
+Which access pattern(s) are evaluated before an application can evaluate access pattern Q3.2?
 
-**A.** Q<sub>3.1</sub> and Q<sub>3.2</sub>
+**A.** Q<sub>1</sub>
 
-**B.** Q<sub>3.2</sub> and Q<sub>3.3</sub>
+**B.** Q<sub>1</sub> and Q<sub>2</sub>
 
-**C.** Q<sub>3.3</sub> and Q<sub>3.4</sub>
+**C.** Q<sub>1</sub> and Q<sub>3</sub>
 
-**D.** Q<sub>3.4</sub> and Q<sub>3.5</sub>
+**D.** Q<sub>1</sub>, Q<sub>3</sub> and Q<sub>3.1</sub>
 
 <details><summary>Click to view the correct answer</summary>
 <p>
     
 | The correct answer is A |
 |:---|
-| Q<sub>3.1</sub> and Q<sub>3.2</sub> access the same data in the same order. The only difference is that Q<sub>3.2</sub> retrieves data for a date range but both Q<sub>3.1</sub> and Q<sub>3.2</sub> require data ordered by date descending so they can use the same table. |
+| Q<sub>1</sub> is the entry point. After Q<sub>1</sub>, Q<sub>2</sub> **or** Q<sub>3</sub> may be evaluated. Q<sub>3</sub> is broken down into Q<sub>3.1</sub> - Q<sub>3.5</sub>. The only prequisite for Q<sub>3.1</sub> - Q<sub>3.5</sub> is Q<sub>1</sub>. Therefore, only Q<sub>1</sub> must be evaluated before  Q<sub>3.2</sub> |
 </p>
 </details>
 
