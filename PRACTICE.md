@@ -395,7 +395,7 @@ Which statement describes the ``WHERE`` clause in a query?
 ### 9. CQL - Developer and Administrator Exams
 Consider the CQL statements:
 ```
-CREATE TYPE name (
+CREATE TYPE NAME (
     first TEXT,
     last TEXT
 );
