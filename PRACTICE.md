@@ -699,7 +699,7 @@ What are the current values for this row?
 [⬆️ Top](#sample-questions)
 
 ### 17. Read/Write/Storage - Administrator Exam
-What is a valid statement about a coordinator node handling a query at consistency level ``CL_THREE``?
+What is a valid statement about a coordinator node handling a query at consistency level ``THREE``?
 
 **A.** The coordinator node sends a direct read request to all replicas.
 
