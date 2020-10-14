@@ -727,16 +727,16 @@ What is a valid statement about a write made at consistency level ``LOCAL_QUORUM
 
 **B.** The coordinator node will send writes to two nodes.
 
-**C.** The coordinaor node will send writes to three nodes.
+**C.** The coordinator node will send writes to three nodes.
 
-**D.** The coodinator node will send writes to all nodes.
+**D.** The coordinator node will send writes to all nodes.
 
 <details><summary>Click to view the correct answer</summary>
 <p>
     
 | The correct answer is C |
 |:---|
-| The coordinator node will always attemp to write to the number of nodes specified in the replication factor. |
+| The coordinator node will always attempt to write to the number of nodes specified in the replication factor. |
 </p>
 </details>
 
