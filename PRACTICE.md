@@ -266,10 +266,10 @@ What primary key does this table have?
 Consider the table definition and the CQL query:
 ```
 CREATE TABLE teams (
-    name TEXT,
+    name TEXT PRIMARY KEY,
     wins INT,
     losses INT,
-    ties INT,
+    ties INT
 );
 
 SELECT * FROM teams_by_wins WHERE wins = 4;
@@ -304,7 +304,7 @@ CREATE MATERIALIZED VIEW IF NOT EXISTS
 CREATE MATERIALIZED VIEW IF NOT EXISTS
     teams_by_wins AS
     SELECT * FROM teams
-      WHERE name IS NOT NULL AND name IS NOT NULL
+      WHERE wins IS NOT NULL AND name IS NOT NULL
       PRIMARY KEY((wins), name);
 ```
 
