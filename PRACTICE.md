@@ -222,7 +222,7 @@ What is a valid statement about this atomic batch?
 ### 5. CQL - Developer and Administrator Exams
 Consider the table definition with a primary key omitted:
 ```
-CREATE TABLE restaurant_reviews {
+CREATE TABLE reviews_by_restaurant (
     name TEXT,
     city TEXT,
     reviewer TEXT,
@@ -230,7 +230,7 @@ CREATE TABLE restaurant_reviews {
     comments TEXT,
     review_date TIMEUUID,
     PRIMARY KEY (...)
-}
+)
 ```
 It is known that:
 - Restaurant Reviews are uniquely identified by a combination of ``name``, ``city`` and ``reviewer``
@@ -256,7 +256,7 @@ What primary key does this table have?
 
 | The correct answer is B |
 | :--- |
-| Since Restaurant Reviews are uniquely identified by a combination of ``name``, ``city`` and ``reviewer`` the primary key must include all three fields. Since Restaurant Reviews are retrieved from the table using combination of ``name``, ``city``, these two fields must comprise the *partition key*. Since this table has multi-row partitions and ``reviewer`` is part of the primary key, it must be a clustering column.|
+| Since restaurant reviews are uniquely identified by a combination of ``name``, ``city`` and ``reviewer`` the primary key must include all three fields. Since restaurant reviews are retrieved from the table using combination of ``name``, ``city``, these two fields must comprise the *partition key*. Since this table has multi-row partitions and ``reviewer`` is part of the primary key, it must be a clustering column.|
 </p>
 </details>
 
