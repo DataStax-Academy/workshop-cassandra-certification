@@ -692,7 +692,7 @@ What are the current values for this row?
     
 | The correct answer is B |
 |:---|
-| Data for a row may be spread across the memtable and multipls SSTables. The row value is made up of the most recent (timestamp) value for each column. |
+| Data for a row may be spread across the memtable and multiple SSTables. The row value is made up of the most recent (timestamp) value for each column. |
 </p>
 </details>
 
