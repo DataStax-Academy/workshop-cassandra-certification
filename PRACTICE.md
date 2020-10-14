@@ -167,7 +167,7 @@ SELECT * FROM cars
 
 | The correct answer is C |
 | :--- |
-| The primary key consists of ``make`` *and* ``model`` so **A** and **B** are excluded because the ``WHERE`` clause does not include the primary key. **C** and **D** both include the primary key but clustering columns can only be *constrained* L-R in the order they appear in the primary key. Since ``year`` appears before ``color``, **C** is correct and **D** is excluded. |
+| The psrtition key consists of ``make`` *and* ``model`` so **A** and **B** are excluded because the ``WHERE`` clause does not include the partition key. **C** and **D** both include the partition key but clustering columns can only be *constrained* L-R in the order they appear in the primary key. Since ``year`` appears before ``color``, **C** is correct and **D** is excluded. |
 </p>
 </details>
 
