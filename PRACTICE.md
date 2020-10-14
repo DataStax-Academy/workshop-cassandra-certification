@@ -443,54 +443,54 @@ INSERT INTO people (id, name, email)
 ### 10. CQL - Developer and Administrator Exams
 Consider the CQL statements:
 ```
-CREATE TABLE people (
-    name TEXT,
+CREATE TABLE emails_by_user (
+    username TEXT,
     email TEXT,
     description TEXT,
     nickname TEXT STATIC,
-    PRIMARY KEY((name), email)
+    PRIMARY KEY((username), email)
 );
 
-INSERT INTO people (name, email, description, nickname) 
-  VALUES ('David', 'david@datastax.com', 'work', 'Dave');
+INSERT INTO people (username, email, description, nickname) 
+  VALUES ('dc1234', 'david@datastax.com', 'work', 'Dave');
   
-INSERT INTO people (name, email, description, nickname) 
-  VALUES ('David', 'david@gmail.com', 'personal', 'Dave');
+INSERT INTO people (username, email, description, nickname) 
+  VALUES ('dc1234', 'david@gmail.com', 'personal', 'Dave');
   
 UPDATE people SET nickname = 'Davey', description = 'school' 
-  WHERE name = 'David' AND email = 'david@gmail.com';
+  WHERE username = 'dc1234' AND email = 'david@gmail.com';
   
-SELECT * FROM PEOPLE WHERE name = 'David';  
+SELECT * FROM PEOPLE WHERE username = 'dc1234';  
 ```
 What is the result of executing theses CQL statements?
 
 **A.**
 ```
- name  | email              | nickname | description
--------+--------------------+----------+-------------
- David | david@datastax.com |     Dave |        work
- David |    david@gmail.com |    Davey |      school
+ username  | email              | nickname | description
+-----------+--------------------+----------+-------------
+    dc1234 | david@datastax.com |     Dave |        work
+    dc1234 |    david@gmail.com |    Davey |      school
 ```
 **B.**
 ```
- name  | email              | nickname | description
--------+--------------------+----------+-------------
- David | david@datastax.com |    Davey |        work
- David |    david@gmail.com |    Davey |      school
+ username  | email              | nickname | description
+-----------+--------------------+----------+-------------
+    dc1234 | david@datastax.com |    Davey |        work
+    dc1234 |    david@gmail.com |    Davey |      school
 ```
 
 **C.**
 ```
- name  | email              | nickname | description
--------+--------------------+----------+-------------
- David |    david@gmail.com |    Davey |      school
+ username  | email              | nickname | description
+-----------+--------------------+----------+-------------
+    dc1234 |    david@gmail.com |    Davey |      school
 ```
 
 **D.**
 ```
- name  | email              | nickname | description
--------+--------------------+----------+-------------
- David | david@datastax.com |     Dave |        work
+ username  | email              | nickname | description
+-----------+--------------------+----------+-------------
+    dc1234 | david@datastax.com |     Dave |        work
 ```
 <details><summary>Click to view the correct answer</summary>
 <p>
