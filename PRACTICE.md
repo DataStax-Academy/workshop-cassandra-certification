@@ -364,7 +364,7 @@ CREATE INDEX cuisine_restaurants_by_city_2i
 
 | The correct answer is A |
 |:---|
-| The secondary index only needs to specify the field(s) (besides the partition key) that will appear in the ``WHERE`` clause. |
+| B, C, and D are incorrect because indexes on multiple columns are not supported. |
 </p>
 </details>
 
