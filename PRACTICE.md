@@ -379,14 +379,14 @@ Which statement describes the ``WHERE`` clause in a query?
 
 **C.** ``WHERE`` clauses must reference all the fields of the primary key.
 
-**D.** ``WHERE`` clauses must reference all the fields of the primary key and clustering key.
+**D.** ``WHERE`` clauses must reference all the fields of the partition key and clustering key.
 
 <details><summary>Click to view the correct answer</summary>
 <p>
 
 | The correct answer is A |
 |:---|
-| Only the fields of the partition key are required. This insures the *partition-per-query* pattern. |
+| Only the fields of the partition key are required. |
 </p>
 </details>
 
