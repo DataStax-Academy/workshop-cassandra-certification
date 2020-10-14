@@ -809,7 +809,7 @@ Which access pattern(s) are evaluated before an application can evaluate access 
     
 | The correct answer is A |
 |:---|
-| Q<sub>1</sub> is the entry point. After Q<sub>1</sub>, Q<sub>2</sub> **or** Q<sub>3</sub> may be evaluated. Q<sub>3</sub> is broken down into Q<sub>3.1</sub> - Q<sub>3.5</sub>. The only prequisite for Q<sub>3.1</sub> - Q<sub>3.5</sub> is Q<sub>1</sub>. Therefore, only Q<sub>1</sub> must be evaluated before  Q<sub>3.2</sub> |
+| Q<sub>1</sub> is the entry point. After Q<sub>1</sub>, Q<sub>2</sub> **or** Q<sub>3</sub> may be evaluated. Q<sub>3</sub> is broken down into Q<sub>3.1</sub> - Q<sub>3.5</sub>. The only prerequisite for Q<sub>3.1</sub> - Q<sub>3.5</sub> is Q<sub>1</sub>. Therefore, only Q<sub>1</sub> must be evaluated before  Q<sub>3.2</sub> |
 </p>
 </details>
 
