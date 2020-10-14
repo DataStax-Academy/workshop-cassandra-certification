@@ -633,14 +633,14 @@ Which configuration file is used to set garbage collection properties for Cassan
 [⬆️ Top](#sample-questions)
 
 ### 16. Read/Write/Storage - Administrator Exam
-Consider the table definition and how a single row is stored in two SSTables on a Cassandra node:
+Consider the table definition and how a single row is stored in one Memtable two SSTables on a Cassandra node:
 
 ```
-CREATE TABLE (
+CREATE TABLE tests(
     id INT PRIMARY KEY,
     test TEXT,
     score int,
-)
+);
 ```
 **Memtable**
 ```
