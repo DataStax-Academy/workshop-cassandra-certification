@@ -639,7 +639,7 @@ Consider the table definition and how a single row is stored in one Memtable two
 CREATE TABLE tests(
     id INT PRIMARY KEY,
     test TEXT,
-    score int,
+    score int
 );
 ```
 **Memtable**
