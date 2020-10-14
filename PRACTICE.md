@@ -547,18 +547,18 @@ At what elapsed time is the data persisted so that it will survive an unexpected
 
 **A.** 690 milliseconds
  
-**B.** 1830 milliseconds
+**B.** 1834 milliseconds
 
 **C.** 2193 milliseconds
 
-**D.** 2977 milliseconds
+**D.** 2966 milliseconds
 
 <details><summary>Click to view the correct answer</summary>
 <p>
     
 | The correct answer is C |
 |:---|
-| Once data is written to *commit log* it will survive and unexpected node shutdown. |
+| Once data is written to *commit log* it will survive an unexpected node shutdown. |
 </p>
 </details>
 
