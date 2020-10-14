@@ -782,7 +782,7 @@ WITH CLUSTERING ORDER BY (symbol ASC, type ASC, trade_id DESC);
     
 | The correct answer is D |
 |:---|
-| Chebotko diagrams list clustering keys in the order they appear in the primary key and the ``WITH CLUSTERING ORDER BY`` (if present) clause *must* specify the ordering for the *leftmost* clustering key(s).|
+| In Chebotko Diagrams, a table lists clustering key columns in the order they appear in the primary key. If the clustering order is explicitly specified for a column in the ``WITH CLUSTERING ORDER BY`` clause, the clustering order for all preceding clustering key columns must also be explicitly specified. |
 </p>
 </details>
 
