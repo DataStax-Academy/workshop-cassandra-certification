@@ -213,7 +213,7 @@ What is a valid statement about this atomic batch?
 
 | The correct answer is C |
 | :--- |
-| The two ``INSERTS`` are into different tables which makes them different partitions. Even if one or both result in *upserts* there is nothing preventing this batch from being applied. Inserting the same data into *de-normalized* tables is a common use case for CQL Batches. |
+| The two ``INSERTS`` are into different tables which makes them different partitions. Even if one or both result in *upserts* there is nothing preventing this batch from being applied. |
 </p>
 </details>
 
