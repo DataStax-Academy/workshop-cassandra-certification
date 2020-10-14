@@ -462,7 +462,7 @@ UPDATE people SET nickname = 'Davey', description = 'school'
   
 SELECT * FROM PEOPLE WHERE username = 'dc1234';  
 ```
-What is the result of executing theses CQL statements?
+What is the result of executing these CQL statements?
 
 **A.**
 ```
