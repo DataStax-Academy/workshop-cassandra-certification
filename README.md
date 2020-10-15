@@ -74,9 +74,9 @@ For the **administrator** path you will need courses [DS201](https://academy.dat
 
 **OR**
 
-**✅ Step 4b.**
-
 For the **developer** path you will need courses [DS201](https://academy.datastax.com/#/online-courses/6167eee3-0575-4d88-9f80-f2270587ce23) and [DS220](https://academy.datastax.com/#/online-courses/ca2e1209-510b-44a6-97de-d5219d835319).
+
+**✅ Step 5.**
 
 At a minimum you will need to watch **ALL** course videos and comfortably **pass practice quizzes** for each course based on your **learning path**.
 
@@ -86,7 +86,7 @@ _Note: The VMs can be pretty large both in size and resources for some laptops. 
 
 _For Katacoda, use [https://www.datastax.com/learning-series/cassandra-fundamentals](https://www.datastax.com/learning-series/cassandra-fundamentals) for **DS201** and [https://katacoda.com/datastax/courses/cassandra-data-modeling](https://katacoda.com/datastax/courses/cassandra-data-modeling) for **DS220**. Again, these don't cover **ALL** of the material the exercise VMs do, but are a great alternative if VMs arent an option._
 
-**✅ Step 5.** 
+**✅ Step 6.** 
 
 Get your exam voucher. 
 
@@ -94,7 +94,7 @@ Complete either the **administrator** or **developer** learning paths within Aca
 
 _Note: the free coupon code can be used **2x**: to retake an exam or if you pass, take a different exam. If you pay for an exam using $145.00, this will allow you to take one exam although you have the ability to retake your exam for an additional $145.00._
 
-**✅ Step 6.** 
+**✅ Step 7.** 
 
 Take your exam.
 
@@ -104,7 +104,7 @@ Navigate to the **DataStax Certification** course in Academy [HERE](https://acad
 
 You will need to register for your exam and follow the instructions to setup your environment. Be sure to **Review the Exam Rules** and **Check your computer for compatibility and install a Google Chrome Extension**. Both options will be presented to you from within the course itself.
 
-**✅ Step 7.** 
+**✅ Step 8.** 
 
 Celebrate, shout from the rooftoops, and don't forget to tell everyone on your LinkedIn profile. 
 
