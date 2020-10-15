@@ -84,6 +84,12 @@ You will be allowed **ONE** voucher per **learning path**. Subsequent exam runs 
 
 **✅ Step 6.** Take your exam.
 
+Navigate to the **DataStax Certification** course in Academy [HERE](https://academy.datastax.com/#/online-courses/c34af0d5-6741-4231-b8ea-79f6c7aafe12)
+
+![certification course](images/certification-course.png?raw=true)
+
+You will need to register for your exam and follow the instructions to setup your environment.
+
 **✅ Step 7.** Celebrate, shout from the rooftoops, and don't forget to add your badge to LinkedIn.
 
 [🏠 Back to Table of Contents](#table-of-contents)
