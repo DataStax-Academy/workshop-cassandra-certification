@@ -21,8 +21,8 @@ It doesn't matter if you join our workshop live or you prefer to do at your own 
 | **Slide deck** | [Slide deck for the workshop](slides/Presentation.pdf) |
 | **1. Why should I do this?** | [Why should I do this](#1-why-should-I-do-this) |
 | **2. Which certification?** | [Which certification](#2-which-certification) |
-| **3. What resources should I use?** | [What resources should I use](#3-what-resources-should-I-use) |
-| **4. What steps do I need to take?** | [What steps do I need to take](#4-what-steps-do-I-need-to-take) |
+| **3. What steps do I need to take?** | [What steps do I need to take](#3-what-steps-do-I-need-to-take) |
+| **4. Practice questions** | [📚🔥 Practice questions🔥📚](#4-practice-questions) |
 
 
 ## 1. Why should I do this?
@@ -50,12 +50,7 @@ You can choose one path or do them both, it's up to you. Either way you'll level
 
 [🏠 Back to Table of Contents](#table-of-contents)
 
-## 3. What resources should I use?
-
-
-[🏠 Back to Table of Contents](#table-of-contents)
-
-## 4. What steps do I need to take?
+## 3. What steps do I need to take?
 
 **✅ Step 1.** Go to [https://www.datastax.com/dev/certifications](https://www.datastax.com/dev/certifications), read through the material, and take special note of the **Exam Rules and Process** section. 
 
@@ -89,4 +84,13 @@ You will be allowed **ONE** voucher per **learning path**. Subsequent exam runs 
 
 **✅ Step 6.** Take your exam.
 
-**✅ Step 7.** Freaking celebrate, shout from the rooftoops, and don't forget to add your badge to LinkedIn.
+**✅ Step 7.** Celebrate, shout from the rooftoops, and don't forget to add your badge to LinkedIn.
+
+[🏠 Back to Table of Contents](#table-of-contents)
+
+## 4. Practice questions
+As part of this workshop we have provided a set of 20 practice questions that span DS201, DS220, and DS210 material. These questions use the same style and form you can expect in the actual exams and will give you an idea of what to expect. 
+
+We highly suggest you run through these and test yourself. Each question will have a hidden answer. Try and answer them first before revealing the solution.
+
+[--> Go to the Practice Questions](./PRACTICE.md)
