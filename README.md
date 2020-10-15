@@ -80,7 +80,7 @@ _For Katacoda, use [https://www.datastax.com/learning-series/cassandra-fundament
 
 Seriously, once you complete either the **administrator** or **developer** learning paths within Academy email **academy@datastax.com** using the same email associated with your Academy account and the subject ```Certification workshop voucher```. Be sure to let us know which learning path you've chosen. 
 
-You will be allowed **ONE** voucher per **learning path**. Subsequent exam runs will not qualify for another voucher.
+_Note: the free coupon code can be used **2x**: to retake an exam or if you pass, take a different exam. If you pay for an exam using $145.00, this will allow you to take one exam although you have the ability to retake your exam for an additional $145.00._
 
 **✅ Step 6.** Take your exam.
 
@@ -88,9 +88,11 @@ Navigate to the **DataStax Certification** course in Academy [HERE](https://acad
 
 ![certification course](images/certification-course.png?raw=true)
 
-You will need to register for your exam and follow the instructions to setup your environment.
+You will need to register for your exam and follow the instructions to setup your environment. Ensure to **Review the Exam Rules** and **Check your computer for compatibility and install a Google Chrome Extension**. Both options will be presented to you from within the course itself.
 
-**✅ Step 7.** Celebrate, shout from the rooftoops, and don't forget to add your badge to LinkedIn.
+**✅ Step 7.** Celebrate, shout from the rooftoops, and don't forget to tell everyone on your LinkedIn profile. 
+
+If you successfully pass your exam you will receive an email congratulating you on your passing grade. From there log back into your Mettl account _(or just login through the **DataStax Certification** course in Academy)_ to get proof of accomplishment.
 
 [🏠 Back to Table of Contents](#table-of-contents)
 
