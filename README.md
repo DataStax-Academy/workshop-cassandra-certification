@@ -69,11 +69,13 @@ Go to [DataStax Academy](https://academy.datastax.com/) and sign up if you have 
 Based on the **learning path** you've chosen complete the course material within Academy. These links are provided for you in the **Learning Paths** section at [https://www.datastax.com/dev/certifications](https://www.datastax.com/dev/certifications). You can also use the following links:
 
 **✅ Step 4a.**
+
 For the **administrator** path you will need courses [DS201](https://academy.datastax.com/#/online-courses/6167eee3-0575-4d88-9f80-f2270587ce23) and [DS210](https://academy.datastax.com/#/online-courses/b0ef552b-4f01-4e0e-ac17-6e7ce29ad6f0).
 
 **OR**
 
 **✅ Step 4b.**
+
 For the **developer** path you will need courses [DS201](https://academy.datastax.com/#/online-courses/6167eee3-0575-4d88-9f80-f2270587ce23) and [DS220](https://academy.datastax.com/#/online-courses/ca2e1209-510b-44a6-97de-d5219d835319).
 
 At a minimum you will need to watch **ALL** course videos and comfortably **pass practice quizzes** for each course based on your **learning path**.
