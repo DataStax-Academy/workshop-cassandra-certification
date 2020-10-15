@@ -78,7 +78,7 @@ _For Katacoda, use [https://www.datastax.com/learning-series/cassandra-fundament
 
 **✅ Step 5.** Get your exam voucher. 
 
-Seriously, once you complete either the **administrator** or **developer** learning paths within Academy email **academy@datastax.com** using the same email associated with your Academy account and the subject ```Certification workshop voucher```. Be sure to let us know which learning path you've chosen. 
+Complete either the **administrator** or **developer** learning paths within Academy. Then, to receive a free voucher email **academy@datastax.com** using the same email associated with your Academy account and the subject ```Certification workshop voucher```. Be sure to let us know which learning path you've chosen. 
 
 _Note: the free coupon code can be used **2x**: to retake an exam or if you pass, take a different exam. If you pay for an exam using $145.00, this will allow you to take one exam although you have the ability to retake your exam for an additional $145.00._
 
