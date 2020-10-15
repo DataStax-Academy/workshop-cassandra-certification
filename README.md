@@ -88,7 +88,7 @@ Navigate to the **DataStax Certification** course in Academy [HERE](https://acad
 
 ![certification course](images/certification-course.png?raw=true)
 
-You will need to register for your exam and follow the instructions to setup your environment. Ensure to **Review the Exam Rules** and **Check your computer for compatibility and install a Google Chrome Extension**. Both options will be presented to you from within the course itself.
+You will need to register for your exam and follow the instructions to setup your environment. Be sure to **Review the Exam Rules** and **Check your computer for compatibility and install a Google Chrome Extension**. Both options will be presented to you from within the course itself.
 
 **✅ Step 7.** Celebrate, shout from the rooftoops, and don't forget to tell everyone on your LinkedIn profile. 
 
