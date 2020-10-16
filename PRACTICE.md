@@ -499,7 +499,7 @@ What is the result of executing these CQL statements?
 
 | The correct answer is B |
 |:---|
-| The ``nickname`` field is static so both rows were set to *Davey*. Because ``email`` is a clustering column the table has two partitions. |
+| Because ``email`` is a clustering column the table has one partition with two rows . The ``nickname`` field is static so it was set to *Davey* for the entire partition.  |
 </p>
 </details>
 
