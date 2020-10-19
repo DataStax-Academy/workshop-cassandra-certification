@@ -114,7 +114,7 @@ What is the result of executing all the CQL statements?
 
 | The correct answer is D |
 | :--- |
-| The primary key consists of ``artist`` *and* ``title``. Each ``INSERT`` has a unique ``artist``/``title`` pair so there are no *upserts* and each ``INSERT`` results in a unique partition. |
+| The primary key consists of ``artist`` *and* ``title``. Each ``INSERT`` has a unique ``artist``/``title`` pair so there are no *upserts* and each ``INSERT`` results in a unique partition. (see DS201 - *Partitions*)|
 </p>
 </details>
 
@@ -388,7 +388,7 @@ Which statement describes the ``WHERE`` clause in a query?
 
 | The correct answer is A |
 |:---|
-| Only the fields of the partition key are required. |
+| Only the fields of the partition key are required. (see DS201 - *Partitions*) |
 </p>
 </details>
 
@@ -582,7 +582,7 @@ How is Replication Factor configured in Cassandra?
     
 | The correct answer is B |
 |:---|
-| Replication factor (and strategy) *must* be configured when creating a keyspace. |
+| Replication factor (and strategy) *must* be configured when creating a keyspace. (see DS201 - *Quick Wins*)|
 </p>
 </details>
 
