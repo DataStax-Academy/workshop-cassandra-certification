@@ -258,7 +258,7 @@ What primary key does this table have?
 
 | The correct answer is B |
 | :--- |
-| Since restaurant reviews are uniquely identified by a combination of ``name``, ``city`` and ``reviewer`` the primary key must include all three fields. Since restaurant reviews are retrieved from the table using combination of ``name``, ``city``, these two fields must comprise the *partition key*. Since this table has multi-row partitions and ``reviewer`` is part of the primary key, it must be a clustering column.|
+| Since restaurant reviews are uniquely identified by a combination of ``name``, ``city`` and ``reviewer`` the primary key must include all three fields. Since restaurant reviews are retrieved from the table using combination of ``name``, ``city``, these two fields must comprise the *partition key*. Since this table has multi-row partitions and ``reviewer`` is part of the primary key, it must be a clustering column. (see DS201 - *Clustering Columns*)|
 </p>
 </details>
 
