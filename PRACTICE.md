@@ -70,7 +70,7 @@ How many rows will the ``roller_coasters`` table have after executing all the CQ
 
 | The correct answer is C |
 | :--- |
-| The first and fourth ``INSERTS`` use the same primary key so they cause an *upsert*. Therefore only 3 rows are created. |
+| The first and fourth ``INSERTS`` use the same primary key so they cause an *upsert*. Therefore only 3 rows are created. (see DS201 - *Clustering Columns*) |
 </p>
 </details>
 
