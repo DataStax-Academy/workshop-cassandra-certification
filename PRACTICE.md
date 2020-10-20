@@ -525,7 +525,7 @@ What is a valid statement about a read request made at consistency level of ``LO
     
 | The correct answer is B |
 |:---|
-| ``LOCAL QUORUM`` requires a quorum (more than half) of the replicas in the *local data center* to respond in order to succeed. Since only 1 of 4 nodes in ``ParisDC`` have failed there will be at least 2 replicas available to handle the request. 2 is the quorum of 3, therefore the request will succeed. |
+| ``LOCAL QUORUM`` requires a quorum (more than half) of the replicas in the *local data center* to respond in order to succeed. Since only 1 of 4 nodes in ``ParisDC`` have failed there will be at least 2 replicas available to handle the request. 2 is the quorum of 3, therefore the request will succeed. (see DS201 - *Consistency*)|
 </p>
 </details>
 
