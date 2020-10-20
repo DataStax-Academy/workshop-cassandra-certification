@@ -232,7 +232,7 @@ CREATE TABLE reviews_by_restaurant (
     comments TEXT,
     review_date TIMEUUID,
     PRIMARY KEY (...)
-)
+);
 ```
 It is known that:
 - Restaurant Reviews are uniquely identified by a combination of ``name``, ``city`` and ``reviewer``
