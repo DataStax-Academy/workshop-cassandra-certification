@@ -760,7 +760,7 @@ WITH CLUSTERING ORDER BY (trade_id DESC, symbol ASC);
 
 **B.** 
 ```
-    PRIMARY KEY((account), trade_id, symbol, type)
+    PRIMARY KEY((account), trade_id, symbol)
 )
 WITH CLUSTERING ORDER BY (trade_id DESC);
 ```
