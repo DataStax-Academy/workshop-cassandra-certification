@@ -749,13 +749,13 @@ Consider the Chebotko Diagram that captures the physical data model for investme
 
 ![physical data model](images/investment-physical.png)
 
-What is the primary key and clustering order of the table ``trades_by_a_std``?
+What is the primary key and clustering order of the table ``trades_by_a_sd``?
 
 **A.** 
 ```
-    PRIMARY KEY((account), trade_id, symbol, type)
+    PRIMARY KEY((account), trade_id, symbol)
 )
-WITH CLUSTERING ORDER BY (trade_id DESC, symbol ASC, type ASC);
+WITH CLUSTERING ORDER BY (trade_id DESC, symbol ASC);
 ```
 
 **B.** 
@@ -767,16 +767,16 @@ WITH CLUSTERING ORDER BY (trade_id DESC);
 
 **C.** 
 ```
-    PRIMARY KEY((account),symbol, type, trade_id)
+    PRIMARY KEY((account), symbol, trade_id)
 )
 WITH CLUSTERING ORDER BY (trade_id DESC);
 ```
 
 **D.** 
 ```
-    PRIMARY KEY((account),symbol, type, trade_id)
+    PRIMARY KEY((account), symbol, trade_id)
 )
-WITH CLUSTERING ORDER BY (symbol ASC, type ASC, trade_id DESC);
+WITH CLUSTERING ORDER BY (symbol ASC, trade_id DESC);
 ```
 
 <details><summary>Click to view the correct answer</summary>
