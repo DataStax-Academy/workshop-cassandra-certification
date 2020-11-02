@@ -3,7 +3,7 @@
 [![License Apache2](https://img.shields.io/hexpm/l/plug.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Discord](https://img.shields.io/discord/685554030159593522)](https://discord.com/widget?id=685554030159593522&theme=dark)
 
-This section will run you through a set of practice exam questions. We will split them into a set from DS201 (Developer), DS220 (Data Modeling), and DS210 (Administrator).
+This section will run you through a set of practice exam questions. We will split them into a set from DS201 (Developer), DS220 (Data Modeling), and DS210 (Administrator). These practice exam questions are also available as a sample exam in the interface used for the *real* certification exams at [https://tests.mettl.com/authenticateKey/2cq9v93x8g](https://tests.mettl.com/authenticateKey/2cq9v93x8g).
 
 [<-- Back to MAIN](./README.md)
 
