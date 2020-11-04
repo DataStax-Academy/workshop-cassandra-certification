@@ -532,7 +532,7 @@ What is a valid statement about a read request made at consistency level of ``LO
 [⬆️ Top](#sample-questions)
 
 ### 12. Architecture - Developer and Administrator Exams
-Consider these CQL traces:
+Consider these CQL traces: (You may need to scroll to see the entire trace.)
 
 ```
  activity                                                                     | timestamp                  | source       | source_elapsed | client
