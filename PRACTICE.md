@@ -453,16 +453,16 @@ CREATE TABLE emails_by_user (
     PRIMARY KEY((username), email)
 );
 
-INSERT INTO people (username, email, description, nickname) 
+INSERT INTO emails_by_user (username, email, description, nickname) 
   VALUES ('dc1234', 'david@datastax.com', 'work', 'Dave');
   
-INSERT INTO people (username, email, description, nickname) 
+INSERT INTO emails_by_user (username, email, description, nickname) 
   VALUES ('dc1234', 'david@gmail.com', 'personal', 'Dave');
   
-UPDATE people SET nickname = 'Davey', description = 'school' 
+UPDATE emails_by_user SET nickname = 'Davey', description = 'school' 
   WHERE username = 'dc1234' AND email = 'david@gmail.com';
   
-SELECT * FROM PEOPLE WHERE username = 'dc1234';  
+SELECT * FROM emails_by_user WHERE username = 'dc1234';  
 ```
 What is the result of executing these CQL statements?
 
