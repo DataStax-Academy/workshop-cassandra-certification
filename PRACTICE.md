@@ -16,8 +16,8 @@ This section will run you through a set of practice exam questions. We will spli
 | **[3. CQL](#3-cql---developer-and-administrator-exams)** | Developer and Administrator |
 | **[4. CQL](#4-cql---developer-and-administrator-exams)** | Developer and Administrator |
 | **[5. CQL](#5-cql---developer-and-administrator-exams)** | Developer and Administrator |
-| **[6. CQL](#6-cql---developer-and-administrator-exams)** | Developer and Administrator |
-| **[7. CQL](#7-cql---developer-and-administrator-exams)** | Developer and Administrator |
+| **[6. CQL](#6-cql---developer-exam)** | Developer |
+| **[7. CQL](#7-cql---developer-exam)** | Developer |
 | **[8. CQL](#8-cql---developer-and-administrator-exams)** | Developer and Administrator |
 | **[9. CQL](#9-cql---developer-and-administrator-exams)** | Developer and Administrator |
 | **[10. CQL](#10-cql---developer-and-administrator-exams)** | Developer and Administrator |
@@ -264,7 +264,7 @@ What primary key does this table have?
 
 [⬆️ Top](#sample-questions)
 
-### 6. CQL - Developer and Administrator Exams
+### 6. CQL - Developer Exam
 Consider the table definition and the CQL query:
 ```
 CREATE TABLE teams (
@@ -321,7 +321,7 @@ CREATE MATERIALIZED VIEW IF NOT EXISTS
 
 [⬆️ Top](#sample-questions)
 
-### 7. CQL - Developer and Administrator Exams
+### 7. CQL - Developer Exam
 Consider the table definition and the CQL query:
 ```
 CREATE TABLE restaurants_by_city (
