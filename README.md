@@ -9,8 +9,8 @@ It doesn't matter if you join our workshop live or you prefer to do at your own 
 
 - Materials used during presentations
 - Workshop videos
-  - [First workshop???](https://youtu.be/Zf1TTwD4ibQ) [NAM Time]
-  - [Second workshop???](https://youtu.be/pVLN6FsUeyo) [IST Time]
+  - [First workshop???](https://www.youtube.com/watch?v=Fa7qYNohH3Y) [NAM Time]
+  - [Second workshop???](https://www.youtube.com/watch?v=9lNhGwNucZ0) [IST Time]
 - [Discord chat](https://bit.ly/cassandra-workshop)
 - [Questions and Answers](https://community.datastax.com/)
 
