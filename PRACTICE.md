@@ -200,7 +200,7 @@ BEGIN BATCH
       VALUES ('AC1123', 'Joe', 'legal');
 APPLY BATCH;
 ```
-What is a valid statement about this atomic batch?
+What is a valid statement about this batch?
 
 **A.** It is a single-partition batch that can be applied.
 
