@@ -1,24 +1,22 @@
-## 🎓🔥 Apache Cassandra™ Certification Workshop 🔥🎓
+## 🎓🔥 DataStax Certification for Apache Cassandra™ Workshop 🔥🎓
 
 [![License Apache2](https://img.shields.io/hexpm/l/plug.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Discord](https://img.shields.io/discord/685554030159593522)](https://discord.com/widget?id=685554030159593522&theme=dark)
 
-Welcome to the **Apache Cassandra™ certification workshop**! In this two-hour workshop, we'll give you all of the details and resources needed to prepare yourself for both the Apache Cassandra™ **Administrator** Associate and Apache Cassandra™ **Developer** Associate certification exams. Plus, we'll work through some practice questions and discuss some of the main exam topics you'll encounter on your path towards certification.
+Welcome to The **DataStax Apache Cassandra™ Certification Workshop**! In this two-hour workshop, we'll give you all of the details and resources needed to prepare yourself for both the **Administrator Associate** and **Developer Associate** certification exams. Plus, we'll work through some practice questions and discuss some of the main exam topics you'll encounter on your path towards certification.
 
 It doesn't matter if you join our workshop live or you prefer to do at your own pace, we have you covered. If you would like to attend one of our live sessions please register [HERE](https://www.eventbrite.co.uk/e/certification-exam-preparation-workshop-tickets-123447365393). In this repository, you'll find everything you need for this workshop:
 
-- Materials used during presentations
-- Workshop videos
-  - [First workshop???](https://www.youtube.com/watch?v=Fa7qYNohH3Y) [NAM Time]
-  - [Second workshop???](https://www.youtube.com/watch?v=9lNhGwNucZ0) [IST Time]
+### Materials
+
+- [Slide deck for the workshop](slides/Presentation.pdf)
+- [Workshop Recording](https://youtu.be/1NSUXcWrkZM?t=554)
 - [Discord chat](https://bit.ly/cassandra-workshop)
 - [Questions and Answers](https://community.datastax.com/)
 
 ## Table of Contents
-
 | Title  | Description
 |---|---|
-| **Slide deck** | [Slide deck for the workshop](slides/Presentation.pdf) |
 | **1. Why should I do this?** | [Why should I do this](#1-why-should-I-do-this) |
 | **2. Which certification?** | [Which certification](#2-which-certification) |
 | **3. What steps do I need to take?** | [What steps do I need to take](#3-what-steps-do-I-need-to-take) |
