@@ -547,13 +547,13 @@ Consider these CQL traces: (You may need to scroll to see the entire trace.)
 ```
 At what elapsed time is the data persisted so that it will survive an unexpected node shutdown?
 
-**A.** 690 milliseconds
+**A.** 690 microseconds
  
-**B.** 1834 milliseconds
+**B.** 1834 microseconds
 
-**C.** 2193 milliseconds
+**C.** 2193 microseconds
 
-**D.** 2966 milliseconds
+**D.** 2966 microseconds
 
 <details><summary>Click to view the correct answer</summary>
 <p>
