@@ -114,7 +114,7 @@ What is the result of executing all the CQL statements?
 
 | The correct answer is D |
 | :--- |
-| The primary key consists of ``artist`` *and* ``title``. Each ``INSERT`` has a unique ``artist``/``title`` pair so there are no *upserts* and each ``INSERT`` results in a unique partition. (see DS201 - *Partitions*)|
+| The partition key consists of ``artist`` *and* ``title`` (and its also the primary key btw). Each ``INSERT`` has a unique ``artist``/``title`` pair so there are no *upserts* and each ``INSERT`` results in a unique partition. (see DS201 - *Partitions*)|
 </p>
 </details>
 
@@ -258,7 +258,9 @@ What primary key does this table have?
 
 | The correct answer is B |
 | :--- |
-| Since restaurant reviews are uniquely identified by a combination of ``name``, ``city`` and ``reviewer`` the primary key must include all three fields. Since restaurant reviews are retrieved from the table using combination of ``name``, ``city``, these two fields must comprise the *partition key*. Since this table has multi-row partitions and ``reviewer`` is part of the primary key, it must be a clustering column. (see DS201 - *Clustering Columns*)|
+| Since restaurant reviews are uniquely identified by a combination of ``name``, ``city`` and ``reviewer`` the primary key must include all three fields. 
+Since restaurant reviews are retrieved from the table using combination of ``name`` and ``city``, these two fields must come before ``reviewer`` in the *primary key*. 
+A primary key ``((name), city, reviewer)`` would also have worked fine, with the query selecting a (contiguous) part of a wider partition. (see DS201 - *Clustering Columns*)|
 </p>
 </details>
 
